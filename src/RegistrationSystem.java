@@ -35,20 +35,20 @@ public class RegistrationSystem {
 
 
 
-//        /** Test 2**/
-//        System.out.printf("%n%n~~~~~~~Test 2: create a valid Student (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: Colin Allcars, student number: 223 was born on 1974-04-12 and is 45 years old");
-//        System.out.printf("%nActual output:   %s was born on %s and is %d years old", st1, st1.getStudentBirthday(), st1.getStudentAge());
-//        if (st1.getStudentBirthday().equals(LocalDate.of(1974, Month.APRIL, 12)) && st1.getStudentAge() == 45) {
-//            marks++;
-//
-//            System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//        }
-//        else {
-//            failedTest.add("Test 2");
-//        }
-//
-//
+        /** Test 2**/
+        System.out.printf("%n%n~~~~~~~Test 2: create a valid Student (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: Colin Allcars, student number: 223 was born on 1974-04-12 and is 45 years old");
+        System.out.printf("%nActual output:   %s was born on %s and is %d years old", st1, st1.getStudentBirthday(), st1.getStudentAge());
+        if (st1.getStudentBirthday().equals(LocalDate.of(1974, Month.APRIL, 12)) && st1.getStudentAge() == 45) {
+            marks++;
+
+            System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+        }
+        else {
+            failedTest.add("Test 2");
+        }
+
+
 //                /** Test 3**/
 //        System.out.printf("%n%n~~~~~~~Test 3: Test the Student getAge() method with a birthday that has already happened this year: (1 mark)~~~~~~~");
 //        Student st2 = new Student("Gail", "Storm", "10 Tornado St", "Windsor", "H6T D3S", "COPR", 10001,
