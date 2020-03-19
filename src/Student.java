@@ -11,6 +11,8 @@ public class Student {
     private LocalDate enrollmentDate;
     private LocalDate birthDate;
 
+    private boolean goodStanding;
+
     public Student(String firstName, String lastName, String city, String streetAddress, String postalCode, String program, int studentNumber, LocalDate enrollmentDate, LocalDate birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -21,6 +23,7 @@ public class Student {
         this.studentNumber = studentNumber;
         this.enrollmentDate = enrollmentDate;
         this.birthDate = birthDate;
+        this.goodStanding = true;
     }
 
     public String getFirstName() {
@@ -138,6 +141,13 @@ public class Student {
     }
 
     public boolean studentInGoodStanding() {
-        return true;
+        if(goodStanding == true) {
+            return true;
+        }
+        return false;
+    }
+
+    public void suspendStudent() {
+        goodStanding = false;
     }
 }

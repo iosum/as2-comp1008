@@ -91,20 +91,20 @@ public class RegistrationSystem {
         }
 
 
-//        /**Test 6  **/
-//        System.out.printf("%n%n~~~~~~~Test 6: suspend the Student (1 mark)~~~~~~~");
-//        st1.suspendStudent();
-//        System.out.printf("%nExpected output: Colin Allcars, student number: 223 is in good standing: false");
-//        System.out.printf("%nActual output:   %s is in good standing: %s", st1, st1.studentInGoodStanding());
-//        if (!st1.studentInGoodStanding()) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 6");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test 6  **/
+        System.out.printf("%n%n~~~~~~~Test 6: suspend the Student (1 mark)~~~~~~~");
+        st1.suspendStudent();
+        System.out.printf("%nExpected output: Colin Allcars, student number: 223 is in good standing: false");
+        System.out.printf("%nActual output:   %s is in good standing: %s", st1, st1.studentInGoodStanding());
+        if (!st1.studentInGoodStanding()) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 6");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test 7  **/
 //        System.out.printf("%n%n~~~~~~~Test 7: Add a student that is too old - should throw an exception (2 mark)~~~~~~~");
 //        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Please check the year entered, student cannot be over 100 years old");
