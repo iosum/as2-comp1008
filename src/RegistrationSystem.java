@@ -49,19 +49,19 @@ public class RegistrationSystem {
         }
 
 
-//                /** Test 3**/
-//        System.out.printf("%n%n~~~~~~~Test 3: Test the Student getAge() method with a birthday that has already happened this year: (1 mark)~~~~~~~");
-//        Student st2 = new Student("Gail", "Storm", "10 Tornado St", "Windsor", "H6T D3S", "COPR", 10001,
-//                LocalDate.of(2010, Month.JANUARY, 22), LocalDate.of(1999, Month.DECEMBER, 31));
-//        System.out.printf("%nExpected output: Student: Gail Storm, student number: 10001 is 19 years old");
-//        System.out.printf("%nActual output:   Student: %s is %d years old", st2, st2.getStudentAge());
-//        if (st2.getStudentAge() == 20) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 3");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+                /** Test 3**/
+        System.out.printf("%n%n~~~~~~~Test 3: Test the Student getAge() method with a birthday that has already happened this year: (1 mark)~~~~~~~");
+        Student st2 = new Student("Gail", "Storm", "10 Tornado St", "Windsor", "H6T D3S", "COPR", 10001,
+                LocalDate.of(2010, Month.JANUARY, 22), LocalDate.of(1999, Month.DECEMBER, 31));
+        System.out.printf("%nExpected output: Student: Gail Storm, student number: 10001 is 19 years old");
+        System.out.printf("%nActual output:   Student: %s is %d years old", st2, st2.getStudentAge());
+        if (st2.getStudentAge() == 20) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 3");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 //        /**Test 4  **/
 //        System.out.printf("%n%n~~~~~~~Test 4: change the students' address (1 mark)~~~~~~~");
