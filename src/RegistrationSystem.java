@@ -63,20 +63,20 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//        /**Test 4  **/
-//        System.out.printf("%n%n~~~~~~~Test 4: change the students' address (1 mark)~~~~~~~");
-//        st1.changeAddress("49 Granite Court", "Bedrock", "R2D 2B3");
-//        System.out.printf("%nExpected output: Colin Allcars, student number: 223 new address is 49 Granite Court Bedrock R2D 2B3");
-//        System.out.printf("%nActual output:   %s new address is %s", st1, st1.getStudentAddress());
-//        if (st1.getStudentAddress().equals("49 Granite Court Bedrock R2D 2B3")) {
-//            marks++;
-//            System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//        }
-//        else {
-//            failedTest.add("Test 4 ");
-//        }
-//
-//
+        /**Test 4  **/
+        System.out.printf("%n%n~~~~~~~Test 4: change the students' address (1 mark)~~~~~~~");
+        st1.changeAddress("49 Granite Court", "Bedrock", "R2D 2B3");
+        System.out.printf("%nExpected output: Colin Allcars, student number: 223 new address is 49 Granite Court Bedrock R2D 2B3");
+        System.out.printf("%nActual output:   %s new address is %s", st1, st1.getStudentAddress());
+        if (st1.getStudentAddress().equals("49 Granite Court Bedrock R2D 2B3")) {
+            marks++;
+            System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+        }
+        else {
+            failedTest.add("Test 4 ");
+        }
+
+
 //        /**Test 5   **/
 //        System.out.printf("%n%n~~~~~~~Test 5: the Student should not be suspended (1 mark)~~~~~~~");
 //        System.out.printf("%nExpected output: Colin Allcars, student number: 223 is in good standing: true");

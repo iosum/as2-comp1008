@@ -126,4 +126,14 @@ public class Student {
 
         return age;
     }
+
+    public void changeAddress(String streetAddress, String city, String postalCode) {
+        setStreetAddress(streetAddress);
+        setCity(city);
+        setPostalCode(postalCode);
+    }
+
+    public String getStudentAddress() {
+        return String.format("%s %s %s", getStreetAddress(), getCity(), getPostalCode());
+    }
 }
