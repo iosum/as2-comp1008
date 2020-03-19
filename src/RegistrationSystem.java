@@ -77,20 +77,20 @@ public class RegistrationSystem {
         }
 
 
-//        /**Test 5   **/
-//        System.out.printf("%n%n~~~~~~~Test 5: the Student should not be suspended (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: Colin Allcars, student number: 223 is in good standing: true");
-//        System.out.printf("%nActual output:   %s is in good standing: %s", st1, st1.studentInGoodStanding());
-//        if (st1.studentInGoodStanding()) {
-//            marks++;
-//
-//            System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//        }
-//        else {
-//            failedTest.add("Test 5");
-//        }
-//
-//
+        /**Test 5   **/
+        System.out.printf("%n%n~~~~~~~Test 5: the Student should not be suspended (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: Colin Allcars, student number: 223 is in good standing: true");
+        System.out.printf("%nActual output:   %s is in good standing: %s", st1, st1.studentInGoodStanding());
+        if (st1.studentInGoodStanding()) {
+            marks++;
+
+            System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+        }
+        else {
+            failedTest.add("Test 5");
+        }
+
+
 //        /**Test 6  **/
 //        System.out.printf("%n%n~~~~~~~Test 6: suspend the Student (1 mark)~~~~~~~");
 //        st1.suspendStudent();

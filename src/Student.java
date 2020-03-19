@@ -136,4 +136,8 @@ public class Student {
     public String getStudentAddress() {
         return String.format("%s %s %s", getStreetAddress(), getCity(), getPostalCode());
     }
+
+    public boolean studentInGoodStanding() {
+        return true;
+    }
 }
