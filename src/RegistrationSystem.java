@@ -140,20 +140,20 @@ public class RegistrationSystem {
         System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
 
 
-//        /**Test 9  **/
-//        System.out.printf("%n~~~~~~~Test 9: create a valid Instructor and call the toString() method (1 mark)~~~~~~~");
-//        Instructor karenV = new Instructor("Karen", "Vader", 1000012, "10 Hightop Lane", "Barrie", "L2S 1A6", LocalDate.of(2013, Month.AUGUST, 22), LocalDate.of(1962, Month.JUNE, 6));
-//        System.out.printf("%nExpected output: The Instructor is: Karen Vader");
-//        System.out.printf("%nActual output:   The Instructor is: %s", karenV);
-//        if (karenV.toString().equalsIgnoreCase("Karen Vader")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 9");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test 9  **/
+        System.out.printf("%n~~~~~~~Test 9: create a valid Instructor and call the toString() method (1 mark)~~~~~~~");
+        Instructor karenV = new Instructor("Karen", "Vader", 1000012, "10 Hightop Lane", "Barrie", "L2S 1A6", LocalDate.of(2013, Month.AUGUST, 22), LocalDate.of(1962, Month.JUNE, 6));
+        System.out.printf("%nExpected output: The Instructor is: Karen Vader");
+        System.out.printf("%nActual output:   The Instructor is: %s", karenV);
+        if (karenV.toString().equalsIgnoreCase("Karen Vader")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 9");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  10 **/
 //        System.out.printf("%n%n~~~~~~~Test 10: Display the Instructor's age (1 mark)~~~~~~~");
 //        System.out.printf("%nExpected output:Karen Vader is 57 years old.");
