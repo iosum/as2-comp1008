@@ -261,20 +261,20 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  18 **/
-//        System.out.printf("%n%n~~~~~~~Test 18: Test if the same course can be added more than once to an Instructor (1 mark)~~~~~~~");
-//        karenV.addCourseToInstructorAbilities("COMP2003");
-//        System.out.printf("%nExpected output: Karen Vader can teach the following courses: [COMP1008, COMP2003]");
-//        System.out.printf("%nActual output:   Karen Vader can teach the following courses: %s", karenV.listOfSubjectsCertifiedToTeach());
-//        if (karenV.listOfSubjectsCertifiedToTeach().equals("[COMP1008, COMP2003]")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 18");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test  18 **/
+        System.out.printf("%n%n~~~~~~~Test 18: Test if the same course can be added more than once to an Instructor (1 mark)~~~~~~~");
+        karenV.addCourseToInstructorAbilities("COMP2003");
+        System.out.printf("%nExpected output: Karen Vader can teach the following courses: [COMP1008, COMP2003]");
+        System.out.printf("%nActual output:   Karen Vader can teach the following courses: %s", karenV.listOfSubjectsCertifiedToTeach());
+        if (karenV.listOfSubjectsCertifiedToTeach().equals("[COMP1008, COMP2003]")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 18");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  19 **/
 //        System.out.printf("%n%n~~~~~~~Test 19: Test creating an Instructor that is too old (2 marks) ~~~~~~~");
 //        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Please check the year entered, instructor cannot be over 100 years old");
