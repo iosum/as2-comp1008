@@ -248,19 +248,19 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  17 **/
-//        System.out.printf("%n%n~~~~~~~Test 17: Test if the instructorcanTeach() identifies that an instructor can teach a course (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: Karen Vader is certified to teach \"COMP1008\": true");
-//        System.out.printf("%nActual output:   %s is certified to teach \"COMP1008\": %s", karenV, karenV.instructorCanTeach("COMP1008"));
-//        if (karenV.instructorCanTeach("COMP1008")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 17");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test  17 **/
+        System.out.printf("%n%n~~~~~~~Test 17: Test if the instructorcanTeach() identifies that an instructor can teach a course (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: Karen Vader is certified to teach \"COMP1008\": true");
+        System.out.printf("%nActual output:   %s is certified to teach \"COMP1008\": %s", karenV, karenV.instructorCanTeach("COMP1008"));
+        if (karenV.instructorCanTeach("COMP1008")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 17");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  18 **/
 //        System.out.printf("%n%n~~~~~~~Test 18: Test if the same course can be added more than once to an Instructor (1 mark)~~~~~~~");
 //        karenV.addCourseToInstructorAbilities("COMP2003");
