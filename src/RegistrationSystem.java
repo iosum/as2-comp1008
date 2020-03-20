@@ -234,20 +234,20 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  16 **/
-//        System.out.printf("%n%n~~~~~~~Test 16: Test if the instructorcanTeach() identifies that an instructor cannot teach a course (1 mark) ~~~~~~~");
-//        System.out.printf("%nExpected output: Karen Vader is certified to teach \"COMP3002\": false");
-//        System.out.printf("%nActual output:   %s is certified to teach \"COMP3002\": %s", karenV, karenV.instructorCanTeach("COMP3002"));
-//        if (!karenV.instructorCanTeach("COMP3002")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 16");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+
+        /**Test  16 **/
+        System.out.printf("%n%n~~~~~~~Test 16: Test if the instructorcanTeach() identifies that an instructor cannot teach a course (1 mark) ~~~~~~~");
+        System.out.printf("%nExpected output: Karen Vader is certified to teach \"COMP3002\": false");
+        System.out.printf("%nActual output:   %s is certified to teach \"COMP3002\": %s", karenV, karenV.instructorCanTeach("COMP3002"));
+        if (!karenV.instructorCanTeach("COMP3002")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 16");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  17 **/
 //        System.out.printf("%n%n~~~~~~~Test 17: Test if the instructorcanTeach() identifies that an instructor can teach a course (1 mark)~~~~~~~");
 //        System.out.printf("%nExpected output: Karen Vader is certified to teach \"COMP1008\": true");

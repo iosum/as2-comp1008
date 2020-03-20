@@ -87,4 +87,12 @@ public class Instructor {
             courses.add(newCourse);
         }
     }
+
+    public boolean instructorCanTeach(String course) {
+        if(courses.contains(course)){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
