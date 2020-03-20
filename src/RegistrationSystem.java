@@ -154,19 +154,19 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  10 **/
-//        System.out.printf("%n%n~~~~~~~Test 10: Display the Instructor's age (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output:Karen Vader is 57 years old.");
-//        System.out.printf("%nActual output: %s is %d years old.", karenV, karenV.getAgeInYears());
-//        if (karenV.getAgeInYears() == 57) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 10");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test  10 **/
+        System.out.printf("%n%n~~~~~~~Test 10: Display the Instructor's age (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output:Karen Vader is 57 years old.");
+        System.out.printf("%nActual output: %s is %d years old.", karenV, karenV.getAgeInYears());
+        if (karenV.getAgeInYears() == 57) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 10");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  11 **/
 //        System.out.printf("%n%n~~~~~~~Test 11: Display how long the Instructor has been at the college (1 mark)~~~~~~~");
 //        System.out.printf("%nExpected output: Karen Vader has been at the college 6 years.");

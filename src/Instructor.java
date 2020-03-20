@@ -24,4 +24,18 @@ public class Instructor {
     public String toString() {
         return String.format("%s %s", firstName, lastName);
     }
+
+    public int getAgeInYears() {
+        int age = LocalDate.now().getYear() - birthday.getYear();
+
+        if (LocalDate.now().getMonth().compareTo(birthday.getMonth()) < 0) {
+            age = age - 1;
+        }
+        else if (LocalDate.now().getMonth().compareTo(birthday.getMonth()) == 0) {
+            if (LocalDate.now().getDayOfMonth() < birthday.getDayOfMonth()) {
+                age = age - 1;
+            }
+        }
+        return age;
+    }
 }
