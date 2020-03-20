@@ -81,4 +81,10 @@ public class Instructor {
             return classList;
         }
     }
+
+    public void addCourseToInstructorAbilities(String newCourse) {
+        if(!courses.contains(newCourse)){
+            courses.add(newCourse);
+        }
+    }
 }
