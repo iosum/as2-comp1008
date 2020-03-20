@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Instructor {
     private String firstName;
@@ -37,5 +38,12 @@ public class Instructor {
             }
         }
         return age;
+    }
+
+    public int noOfYearsAtCollege() {
+        LocalDate today = LocalDate.now();
+        long diff = Period.between(hireDate, today).getYears();
+
+        return (int) diff;
     }
 }

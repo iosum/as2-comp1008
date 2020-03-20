@@ -167,19 +167,19 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  11 **/
-//        System.out.printf("%n%n~~~~~~~Test 11: Display how long the Instructor has been at the college (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: Karen Vader has been at the college 6 years.");
-//        System.out.printf("%nActual output:   %s has been at the college %d years.", karenV, karenV.noOfYearsAtCollege());
-//        if (karenV.noOfYearsAtCollege() == 6) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 11");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test  11 **/
+        System.out.printf("%n%n~~~~~~~Test 11: Display how long the Instructor has been at the college (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: Karen Vader has been at the college 6 years.");
+        System.out.printf("%nActual output:   %s has been at the college %d years.", karenV, karenV.noOfYearsAtCollege());
+        if (karenV.noOfYearsAtCollege() == 6) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 11");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  12 **/
 //        System.out.printf("%n%n~~~~~~~Test 12: Display the Instructor's address (1 mark)~~~~~~~");
 //        System.out.printf("%nExpected output: The address of Karen Vader is 10 Hightop Lane, Barrie, L2S 1A6");
