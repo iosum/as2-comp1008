@@ -206,19 +206,19 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//        /**Test  14 **/
-//
-//        System.out.printf("%n%n~~~~~~~Test 14: Display the courses the Instructor can teach (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: Karen Vader can teach the following courses: not qualified to teach courses yet.");
-//        System.out.printf("%nActual output:   %s can teach the following courses: %s", karenV, karenV.listOfSubjectsCertifiedToTeach());
-//        if (karenV.listOfSubjectsCertifiedToTeach().equals("not qualified to teach courses yet.")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 14");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+        /**Test  14 **/
+
+        System.out.printf("%n%n~~~~~~~Test 14: Display the courses the Instructor can teach (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: Karen Vader can teach the following courses: not qualified to teach courses yet.");
+        System.out.printf("%nActual output:   %s can teach the following courses: %s", karenV, karenV.listOfSubjectsCertifiedToTeach());
+        if (karenV.listOfSubjectsCertifiedToTeach().equals("not qualified to teach courses yet.")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 14");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  15 **/
 //        System.out.printf("%n%n~~~~~~~Test 15: Add some courses for the instructor to teach (1 mark)~~~~~~~");

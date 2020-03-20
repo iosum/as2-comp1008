@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 
 public class Instructor {
     private String firstName;
@@ -10,6 +11,7 @@ public class Instructor {
     private String postalCode;
     private LocalDate hireDate;
     private LocalDate birthday;
+    public ArrayList<String> courses;
 
     public Instructor(String firstName, String lastName, int instructorNumber, String streetAddress, String city, String postalCode, LocalDate hireDate, LocalDate birthday) {
         this.firstName = firstName;
@@ -20,6 +22,7 @@ public class Instructor {
         this.postalCode = postalCode;
         this.hireDate = hireDate;
         this.birthday = birthday;
+        courses = new ArrayList<>();
     }
 
     public String toString() {
@@ -55,5 +58,27 @@ public class Instructor {
         this.streetAddress = streetAddress;
         this.city = city;
         this.postalCode = postalCode;
+    }
+
+    public String listOfSubjectsCertifiedToTeach() {
+        String classList = "[";
+        int counter = 0;
+
+        for (String course : courses) {
+            counter++;
+            classList = classList + course;
+            if (counter == 1) {
+                classList = classList + ", ";
+            }
+        }
+
+        classList = classList + "]";
+
+        if (courses.isEmpty()) {
+            return "not qualified to teach courses yet.";
+        }
+        else {
+            return classList;
+        }
     }
 }
