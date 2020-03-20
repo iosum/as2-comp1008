@@ -104,44 +104,42 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
+        /**Test 7  **/
+        System.out.printf("%n%n~~~~~~~Test 7: Add a student that is too old - should throw an exception (2 mark)~~~~~~~");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Please check the year entered, student cannot be over 100 years old");
+        System.out.printf("%nActual output:   ");
+        //Test adding a student that is too old to enrol in college
+        try {
+            Student st3 = new Student("Barney", "Rubble", "18 Cobblestone Way",
+                    "Bedrock", "L0L 6T6", "COPA", 224,
+                    LocalDate.of(2016, Month.FEBRUARY, 1),
+                    LocalDate.of(1872, Month.APRIL, 12));
 
-//        /**Test 7  **/
-//        System.out.printf("%n%n~~~~~~~Test 7: Add a student that is too old - should throw an exception (2 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Please check the year entered, student cannot be over 100 years old");
-//        System.out.printf("%nActual output:   ");
-//        //Test adding a student that is too old to enrol in college
-//        try {
-//            Student st3 = new Student("Barney", "Rubble", "18 Cobblestone Way",
-//                    "Bedrock", "L0L 6T6", "COPA", 224,
-//                    LocalDate.of(2016, Month.FEBRUARY, 1),
-//                    LocalDate.of(1872, Month.APRIL, 12));
-//
-//            failedTest.add("Test 7");
-//
-//        } catch (IllegalArgumentException e) {
-//            System.out.printf("%s", e);
-//            marks += 2;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
-//        /**Test  8 **/
-//        System.out.printf("%n%n~~~~~~~Test 8: retrieve the year a Student enrolled in the school (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: Colin Allcars, student number: 223 enrolled in the year 2000");
-//        System.out.printf("%nActual output:   %s enrolled in the year %d", st1, st1.getNoOfYearEnrolled());
-//        if (st1.getNoOfYearEnrolled() == 2000) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 8");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//        System.out.printf("%n%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
-//        System.out.printf("%n!~~             Instructor Tests               ~~!");
-//        System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
-//
-//
+            failedTest.add("Test 7");
+
+        } catch (IllegalArgumentException e) {
+            System.out.printf("%s", e);
+            marks+=2;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+        /**Test  8 **/
+        System.out.printf("%n%n~~~~~~~Test 8: retrieve the year a Student enrolled in the school (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: Colin Allcars, student number: 223 enrolled in the year 2000");
+        System.out.printf("%nActual output:   %s enrolled in the year %d", st1, st1.getNoOfYearEnrolled());
+        if (st1.getNoOfYearEnrolled() == 2000) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 8");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+        System.out.printf("%n%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
+        System.out.printf("%n!~~             Instructor Tests               ~~!");
+        System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
+
+
 //        /**Test 9  **/
 //        System.out.printf("%n~~~~~~~Test 9: create a valid Instructor and call the toString() method (1 mark)~~~~~~~");
 //        Instructor karenV = new Instructor("Karen", "Vader", 1000012, "10 Hightop Lane", "Barrie", "L2S 1A6", LocalDate.of(2013, Month.AUGUST, 22), LocalDate.of(1962, Month.JUNE, 6));

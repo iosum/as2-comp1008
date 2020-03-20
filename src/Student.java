@@ -22,7 +22,7 @@ public class Student {
         this.program = program;
         this.studentNumber = studentNumber;
         this.enrollmentDate = enrollmentDate;
-        this.birthDate = birthDate;
+        setBirthDate(birthDate);
         this.goodStanding = true;
     }
 
@@ -91,11 +91,26 @@ public class Student {
     }
 
     public LocalDate getBirthDate() {
+
         return birthDate;
     }
 
     public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+        int age = LocalDate.now().getYear() - birthDate.getYear();
+
+        if (LocalDate.now().getMonth().compareTo(birthDate.getMonth()) < 0) {
+            age = age - 1;
+        }
+        else if (LocalDate.now().getMonth().compareTo(birthDate.getMonth()) == 0) {
+            if (LocalDate.now().getDayOfMonth() < birthDate.getDayOfMonth()) {
+                age = age - 1;
+            }
+        }
+        if(age >= 14 && age <= 90) {
+            this.birthDate = birthDate;
+        } else {
+            throw new IllegalArgumentException("Expected output: java.lang.IllegalArgumentException: Please check the year entered, student cannot be over 100 years old");
+        }
     }
 
     @Override
@@ -126,6 +141,11 @@ public class Student {
                 age = age - 1;
             }
         }
+        if(age >= 14 && age <= 90) {
+            this.birthDate = birthDate;
+        } else {
+            throw new IllegalArgumentException("Please check the year entered, student cannot be over 100 years old");
+        }
 
         return age;
     }
@@ -149,5 +169,9 @@ public class Student {
 
     public void suspendStudent() {
         goodStanding = false;
+    }
+
+    public int getNoOfYearEnrolled() {
+        return enrollmentDate.getYear();
     }
 }
