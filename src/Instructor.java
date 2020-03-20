@@ -50,4 +50,10 @@ public class Instructor {
     public String getInstructorAddress() {
         return streetAddress + ", " + city + ", " + postalCode;
     }
+
+    public void changeAddress(String streetAddress, String city, String postalCode) {
+        this.streetAddress = streetAddress;
+        this.city = city;
+        this.postalCode = postalCode;
+    }
 }

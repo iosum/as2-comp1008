@@ -193,19 +193,19 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  13  **/
-//        System.out.printf("%n%n~~~~~~~Test 13: Change the Instructor address and display the result (1 mark)~~~~~~~");
-//        karenV.changeAddress("101 First Floor Ave.", "Utopia", "L3S 2A2");
-//        System.out.printf("%nExpected output: The address of Karen Vader is 101 First Floor Ave., Utopia, L3S 2A2");
-//        System.out.printf("%nActual output:   The address of %s is %s", karenV, karenV.getInstructorAddress());
-//        if (karenV.getInstructorAddress().equals("101 First Floor Ave., Utopia, L3S 2A2")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 13");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+        /**Test  13  **/
+        System.out.printf("%n%n~~~~~~~Test 13: Change the Instructor address and display the result (1 mark)~~~~~~~");
+        karenV.changeAddress("101 First Floor Ave.", "Utopia", "L3S 2A2");
+        System.out.printf("%nExpected output: The address of Karen Vader is 101 First Floor Ave., Utopia, L3S 2A2");
+        System.out.printf("%nActual output:   The address of %s is %s", karenV, karenV.getInstructorAddress());
+        if (karenV.getInstructorAddress().equals("101 First Floor Ave., Utopia, L3S 2A2")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 13");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //        /**Test  14 **/
 //
 //        System.out.printf("%n%n~~~~~~~Test 14: Display the courses the Instructor can teach (1 mark)~~~~~~~");
