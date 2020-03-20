@@ -21,8 +21,30 @@ public class Instructor {
         this.city = city;
         this.postalCode = postalCode;
         this.hireDate = hireDate;
-        this.birthday = birthday;
+        setBirthday(birthday);
         courses = new ArrayList<>();
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        int age = LocalDate.now().getYear() - birthday.getYear();
+
+        if (LocalDate.now().getMonth().compareTo(birthday.getMonth()) < 0) {
+            age = age - 1;
+        }
+        else if (LocalDate.now().getMonth().compareTo(birthday.getMonth()) == 0) {
+            if (LocalDate.now().getDayOfMonth() < birthday.getDayOfMonth()) {
+                age = age - 1;
+            }
+        }
+        if(age >= 14 && age <= 90) {
+            this.birthday = birthday;
+        } else {
+            throw new IllegalArgumentException("Expected output: java.lang.IllegalArgumentException: Please check the year entered, student cannot be over 100 years old");
+        }
     }
 
     public String toString() {

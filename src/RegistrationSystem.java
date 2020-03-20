@@ -275,22 +275,22 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  19 **/
-//        System.out.printf("%n%n~~~~~~~Test 19: Test creating an Instructor that is too old (2 marks) ~~~~~~~");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Please check the year entered, instructor cannot be over 100 years old");
-//        System.out.printf("%nActual output:   ");
-//        try {
-//            Instructor oldMan = new Instructor("Al", "Dente", 1000013, "16 Ancient Ave", "Innisfil", "W32S 1A6",
-//                    LocalDate.of(2010, Month.AUGUST, 22), LocalDate.of(1901, Month.DECEMBER, 21));
-//
-//            failedTest.add("Test 19");
-//        } catch (IllegalArgumentException e) {
-//            System.out.printf("%s", e);
-//            marks += 2;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test  19 **/
+        System.out.printf("%n%n~~~~~~~Test 19: Test creating an Instructor that is too old (2 marks) ~~~~~~~");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Please check the year entered, instructor cannot be over 100 years old");
+        System.out.printf("%nActual output:   ");
+        try {
+            Instructor oldMan = new Instructor("Al", "Dente", 1000013, "16 Ancient Ave", "Innisfil", "W32S 1A6",
+                    LocalDate.of(2010, Month.AUGUST, 22), LocalDate.of(1901, Month.DECEMBER, 21));
+
+            failedTest.add("Test 19");
+        } catch (IllegalArgumentException e) {
+            System.out.printf("%s", e);
+            marks += 2;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  20 **/
 //        System.out.printf("%n%n~~~~~~~Test 20: Test creating an Instructor that has an invalid hire date (2 marks) ~~~~~~~");
 //        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: 1910-08-22 as a hire date would mean Anita started working over 80 years ago");
@@ -309,8 +309,8 @@ public class RegistrationSystem {
 //        System.out.printf("%n%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
 //        System.out.printf("%n!~~               Course Tests                 ~~!");
 //        System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
-//
-//
+
+
 //        /**Test  21  **/
 //        System.out.printf("%n%n~~~~~~~Test 21: create a valid Instructor and then create a valid Course with the Instructor (1 marks)~~~~~~~");
 //        Instructor frank = new Instructor("Frank", "Enstein", 1000012, "10 Awesome Lane", "Barrie", "L2S 1A6", LocalDate.of(2010, Month.AUGUST, 22), LocalDate.of(1962, Month.JUNE, 6));
