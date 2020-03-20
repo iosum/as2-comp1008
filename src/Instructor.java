@@ -46,4 +46,8 @@ public class Instructor {
 
         return (int) diff;
     }
+
+    public String getInstructorAddress() {
+        return streetAddress + ", " + city + ", " + postalCode;
+    }
 }
