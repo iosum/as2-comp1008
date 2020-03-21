@@ -458,19 +458,19 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test   31 **/
-//        System.out.printf("%n%n~~~~~~~Test 31: Test the matureClass() method when it is an older class (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: The average age for the class is above 25: true");
-//        System.out.printf("%nActual output:   The average age for the class is above 25: %s", comp1008.matureClass());
-//        if (comp1008.matureClass()) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 31");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test   31 **/
+        System.out.printf("%n%n~~~~~~~Test 31: Test the matureClass() method when it is an older class (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: The average age for the class is above 25: true");
+        System.out.printf("%nActual output:   The average age for the class is above 25: %s", comp1008.matureClass());
+        if (comp1008.matureClass()) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 31");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //        // /**Test    32 **/
 //        System.out.printf("%n%n~~~~~~~Test 32: Test the matureClass() method when it is a younger class (1 mark)~~~~~~~");
 //        st1.setBirthday(LocalDate.of(2000, Month.DECEMBER, 31));

@@ -88,7 +88,7 @@ public class Course {
     }
 
     public void setCourseTime(LocalTime courseTime) {
-        if(courseTime.getHour() >= 8 && courseTime.getHour() < 18) {
+        if (courseTime.getHour() >= 8 && courseTime.getHour() < 18) {
             this.courseTime = courseTime;
         }
         else {
@@ -127,10 +127,10 @@ public class Course {
     public String addStudent(Student newStudent) {
         String result = "";
         students.add(newStudent);
-        if(!newStudent.studentInGoodStanding()) {
+        if (!newStudent.studentInGoodStanding()) {
             result += "The Student is not in good standing and cannot join the course.";
         }
-        else if(students.size() >= maxStudents) {
+        else if (students.size() >= maxStudents) {
             result += "Student was not added because the course is full";
         }
         return result;
@@ -146,7 +146,7 @@ public class Course {
 
     public String setClassSize(int classSize) {
         String result = "";
-        if(classSize > 40) {
+        if (classSize > 40) {
             classSize = 40;
             maxStudents = 40;
             result += "Max class size = 40, it has been set to 40";
@@ -156,5 +156,23 @@ public class Course {
 
     public int getClassSize() {
         return maxStudents;
+    }
+
+    public boolean matureClass() {
+        double allStudentAge = 0;
+        int sum = 0;
+
+        for (Student student : students) {
+            allStudentAge = allStudentAge + student.getStudentAge();
+            sum = sum + 1;
+        }
+        double average = allStudentAge / sum;
+
+        if (average > 25) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
