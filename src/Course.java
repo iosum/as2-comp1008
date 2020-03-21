@@ -120,7 +120,10 @@ public class Course {
     public String addStudent(Student newStudent) {
         String result = "";
         students.add(newStudent);
-        if(students.size() >= maxStudents) {
+        if(!newStudent.studentInGoodStanding()) {
+            result += "The Student is not in good standing and cannot join the course.";
+        }
+        else if(students.size() >= maxStudents) {
             result += "Student was not added because the course is full";
         }
         return result;

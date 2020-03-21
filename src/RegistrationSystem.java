@@ -399,20 +399,20 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  27  **/
-//        System.out.printf("%n%n~~~~~~~Test 27: Test adding a suspended student to a Course(1 marks)~~~~~~~");
-//        st4.suspendStudent();
-//        System.out.printf("%nExpected output: The Student is not in good standing and cannot join the course.");
-//        System.out.printf("%nActual output:   %s", comp1008.addStudent(st4));
-//        if (comp1008.addStudent(st4).equals("The Student is not in good standing and cannot join the course.")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 27");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test  27  **/
+        System.out.printf("%n%n~~~~~~~Test 27: Test adding a suspended student to a Course(1 marks)~~~~~~~");
+        st4.suspendStudent();
+        System.out.printf("%nExpected output: The Student is not in good standing and cannot join the course.");
+        System.out.printf("%nActual output:   %s", comp1008.addStudent(st4));
+        if (comp1008.addStudent(st4).equals("The Student is not in good standing and cannot join the course.")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 27");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test   28 **/
 //        System.out.printf("%n%n~~~~~~~Test 28: Test increasing the max size of the class to 80 (2 marks)~~~~~~~");
 //        System.out.printf("%nExpected output: Max class size = 40, it has been set to 40");
