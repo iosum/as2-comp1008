@@ -507,23 +507,23 @@ public class RegistrationSystem {
         System.out.printf("%n!~~        Course With lab Tests               ~~!");
         System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
 
-//
-//        /**Test  34  **/
-//        System.out.printf("%n%n~~~~~~~Test 34: Test creating a valid lab course: (2 marks)~~~~~~~");
-//        Instructor labGuy = new Instructor("Dan", "Gerus", 1000013, "15 Risk Ave.", "Barrie", "L3S 1A6", LocalDate.of(2011, Month.AUGUST, 22), LocalDate.of(1982, Month.JUNE, 6));
-//        labGuy.addCourseToInstructorAbilities("COMP2004-LAB");
-//        karenV.addCourseToInstructorAbilities("COMP2004");
-//        CourseWithLab comp2004 = new CourseWithLab(karenV, "COMP2004", "FX GUIs", "E208", DayOfWeek.MONDAY, LocalTime.parse("08:00"), 3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("15:00"));
-//        System.out.printf("%nExpected output: COMP2004-FX GUIs with lab");
-//        System.out.printf("%nActual output:   %s", comp2004.toString());
-//        if (comp2004.toString().equals("COMP2004-FX GUIs with lab")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 34");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  34  **/
+        System.out.printf("%n%n~~~~~~~Test 34: Test creating a valid lab course: (2 marks)~~~~~~~");
+        Instructor labGuy = new Instructor("Dan", "Gerus", 1000013, "15 Risk Ave.", "Barrie", "L3S 1A6", LocalDate.of(2011, Month.AUGUST, 22), LocalDate.of(1982, Month.JUNE, 6));
+        labGuy.addCourseToInstructorAbilities("COMP2004-LAB");
+        karenV.addCourseToInstructorAbilities("COMP2004");
+        CourseWithLab comp2004 = new CourseWithLab(karenV, "COMP2004", "FX GUIs", "E208", DayOfWeek.MONDAY, LocalTime.parse("08:00"), 3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("15:00"));
+        System.out.printf("%nExpected output: COMP2004-FX GUIs with lab");
+        System.out.printf("%nActual output:   %s", comp2004.toString());
+        if (comp2004.toString().equals("COMP2004-FX GUIs with lab")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 34");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  35  **/
 //        System.out.printf("%n%n~~~~~~~Test 35: Test creating a CourseWithLab that has an unqualified Instructor: (2 marks)~~~~~~~");
