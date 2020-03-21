@@ -311,21 +311,21 @@ public class RegistrationSystem {
         System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
 
 
-//        /**Test  21  **/
-//        System.out.printf("%n%n~~~~~~~Test 21: create a valid Instructor and then create a valid Course with the Instructor (1 marks)~~~~~~~");
-//        Instructor frank = new Instructor("Frank", "Enstein", 1000012, "10 Awesome Lane", "Barrie", "L2S 1A6", LocalDate.of(2010, Month.AUGUST, 22), LocalDate.of(1962, Month.JUNE, 6));
-//        frank.addCourseToInstructorAbilities("COMP1008");
-//        Course comp1008 = new Course(frank, "COMP1008", "Intro to OOP", "E202", DayOfWeek.TUESDAY, LocalTime.parse("11:00"), 3);
-//        System.out.printf("%nExpected output: The course is: COMP1008-Intro to OOP");
-//        System.out.printf("%nActual output:   The course is: %s", comp1008);        //note: this will actually call the course toString() method
-//        if (comp1008.toString().equals("COMP1008-Intro to OOP")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 21");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+        /**Test  21  **/
+        System.out.printf("%n%n~~~~~~~Test 21: create a valid Instructor and then create a valid Course with the Instructor (1 marks)~~~~~~~");
+        Instructor frank = new Instructor("Frank", "Enstein", 1000012, "10 Awesome Lane", "Barrie", "L2S 1A6", LocalDate.of(2010, Month.AUGUST, 22), LocalDate.of(1962, Month.JUNE, 6));
+        frank.addCourseToInstructorAbilities("COMP1008");
+        Course comp1008 = new Course(frank, "COMP1008", "Intro to OOP", "E202", DayOfWeek.TUESDAY, LocalTime.parse("11:00"), 3);
+        System.out.printf("%nExpected output: The course is: COMP1008-Intro to OOP");
+        System.out.printf("%nActual output:   The course is: %s", comp1008);        //note: this will actually call the course toString() method
+        if (comp1008.toString().equals("COMP1008-Intro to OOP")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 21");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  22 **/
 //        System.out.printf("%n%n~~~~~~~Test 22: Test the getRoom method (1 mark)~~~~~~~");
