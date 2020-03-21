@@ -353,18 +353,18 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  24 **/
-//        System.out.printf("%n%n~~~~~~~Test 24: Test the getInstructorToTeach method (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: The course is taught by: Frank Enstein");
-//        System.out.printf("%nActual output:   The course is taught by: %s", comp1008.getInstructorToTeach());
-//        if (comp1008.getInstructorToTeach().equals(frank)) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 24");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+        /**Test  24 **/
+        System.out.printf("%n%n~~~~~~~Test 24: Test the getInstructorToTeach method (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: The course is taught by: Frank Enstein");
+        System.out.printf("%nActual output:   The course is taught by: %s", comp1008.getInstructorToTeach());
+        if (comp1008.getInstructorToTeach().equals(frank)) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 24");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  25 **/
 //        System.out.printf("%n%n~~~~~~~Test 25: Test adding Students to the class (1 marks)~~~~~~~");

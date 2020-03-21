@@ -20,6 +20,62 @@ public class Course {
         this.hours = hours;
     }
 
+    public Instructor getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
+    public String getCourseDescription() {
+        return courseDescription;
+    }
+
+    public void setCourseDescription(String courseDescription) {
+        this.courseDescription = courseDescription;
+    }
+
+    public String getCourseRoom() {
+        return courseRoom;
+    }
+
+    public void setCourseRoom(String courseRoom) {
+        this.courseRoom = courseRoom;
+    }
+
+    public DayOfWeek getCourseDay() {
+        return courseDay;
+    }
+
+    public void setCourseDay(DayOfWeek courseDay) {
+        this.courseDay = courseDay;
+    }
+
+    public LocalTime getCourseTime() {
+        return courseTime;
+    }
+
+    public void setCourseTime(LocalTime courseTime) {
+        this.courseTime = courseTime;
+    }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+
     public String toString() {
         return String.format("%s-%s", courseCode,courseDescription);
     }
@@ -34,5 +90,9 @@ public class Course {
         time = time + "'s, starting at " + courseTime;
 
         return time;
+    }
+
+    public Instructor getInstructorToTeach() {
+        return getInstructor();
     }
 }
