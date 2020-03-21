@@ -471,22 +471,22 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//        // /**Test    32 **/
-//        System.out.printf("%n%n~~~~~~~Test 32: Test the matureClass() method when it is a younger class (1 mark)~~~~~~~");
-//        st1.setBirthday(LocalDate.of(2000, Month.DECEMBER, 31));
-//        st2.setBirthday(LocalDate.of(2000, Month.FEBRUARY, 16));
-//        st3.setBirthday(LocalDate.of(2000, Month.MARCH, 23));
-//        st4.setBirthday(LocalDate.of(2000, Month.MARCH, 29));
-//        System.out.printf("%nExpected output: The average age for the class is above 25: false");
-//        System.out.printf("%nActual output:   The average age for the class is above 25: %s", comp1008.matureClass());
-//        if (!comp1008.matureClass()) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 32");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+        // /**Test    32 **/
+        System.out.printf("%n%n~~~~~~~Test 32: Test the matureClass() method when it is a younger class (1 mark)~~~~~~~");
+        st1.setBirthday(LocalDate.of(2000, Month.DECEMBER, 31));
+        st2.setBirthday(LocalDate.of(2000, Month.FEBRUARY, 16));
+        st3.setBirthday(LocalDate.of(2000, Month.MARCH, 23));
+        st4.setBirthday(LocalDate.of(2000, Month.MARCH, 29));
+        System.out.printf("%nExpected output: The average age for the class is above 25: false");
+        System.out.printf("%nActual output:   The average age for the class is above 25: %s", comp1008.matureClass());
+        if (!comp1008.matureClass()) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 32");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  33 **/
 //        System.out.printf("%n%n~~~~~~~Test 33: Test to ensure invalid Instructor will not be added: (1 mark)~~~~~~~");

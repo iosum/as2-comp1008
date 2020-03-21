@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Student {
     private String firstName;
@@ -177,5 +178,16 @@ public class Student {
 
     public void reinstateStudent() {
         goodStanding = true;
+    }
+
+    public void setBirthday(LocalDate birthDate) {
+        LocalDate today = LocalDate.now();
+        long diff = Period.between(birthDate, today).getYears();
+
+        if(diff > 100){
+            throw new IllegalArgumentException(birthDate + " would make " + firstName + " over 100 years old");
+        } else {
+            this.birthDate = birthDate;
+        }
     }
 }
