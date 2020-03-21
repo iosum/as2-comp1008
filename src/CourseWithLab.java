@@ -26,7 +26,16 @@ public class CourseWithLab extends Course{
         setLabTech(labTech);
         this.labRoom = labRoom;
         this.labDay = labDay;
-        this.labTime = labTime;
+        setLabTime(labTime);
+    }
+
+    private void setLabTime(LocalTime labTime) {
+        if (labTime.getHour() >= 8 && labTime.getHour() < 18) {
+            this.labTime = labTime;
+        }
+        else {
+            throw new IllegalArgumentException("The lab start time must be between 08:00-18:00");
+        }
     }
 
 

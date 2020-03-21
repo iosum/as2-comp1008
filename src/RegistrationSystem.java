@@ -559,24 +559,24 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  37 **/
-//        System.out.printf("%n%n~~~~~~~Test 37: Test creating a course with invalid lab time: (2 marks)~~~~~~~");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: The lab start time must be between 08:00-18:00");
-//        System.out.printf("%nActual output:   ");
-//        labGuy.addCourseToInstructorAbilities("COMP2008-LAB");
-//        try {
-//            CourseWithLab comp2008 = new CourseWithLab(alec, "COMP2008", "UI Design", "E208", DayOfWeek.THURSDAY, LocalTime.parse("13:00"),
-//                    3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("19:00"));
-//
-//            failedTest.add("Test 37");
-//
-//        } catch (IllegalArgumentException e) {
-//            System.out.print(e);
-//            marks += 2;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  37 **/
+        System.out.printf("%n%n~~~~~~~Test 37: Test creating a course with invalid lab time: (2 marks)~~~~~~~");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: The lab start time must be between 08:00-18:00");
+        System.out.printf("%nActual output:   ");
+        labGuy.addCourseToInstructorAbilities("COMP2008-LAB");
+        try {
+            CourseWithLab comp2008 = new CourseWithLab(alec, "COMP2008", "UI Design", "E208", DayOfWeek.THURSDAY, LocalTime.parse("13:00"),
+                    3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("19:00"));
+
+            failedTest.add("Test 37");
+
+        } catch (IllegalArgumentException e) {
+            System.out.print(e);
+            marks += 2;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  38 **/
 //        System.out.printf("%n%n~~~~~~~Test 38: Test returning the lab room, day and time: (2 marks)~~~~~~~");
