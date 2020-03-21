@@ -23,12 +23,20 @@ public class CourseWithLab extends Course{
         this.courseDay = courseDay;
         this.courseTime = courseTime;
         this.hours = hours;
-        this.labTech = labTech;
+        setLabTech(labTech);
         this.labRoom = labRoom;
         this.labDay = labDay;
         this.labTime = labTime;
     }
 
+
+    public void setLabTech(Instructor labTech){
+        if(labTech.instructorCanTeach(courseCode+"-LAB")){
+            this.labTech = labTech;
+        } else {
+            throw new IllegalArgumentException("The Lab Tech is not qualified to host the lab");
+        }
+    }
 
 
     public String toString() {

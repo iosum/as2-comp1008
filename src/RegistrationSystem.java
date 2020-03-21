@@ -542,23 +542,23 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test 36  **/
-//        System.out.printf("%n%n~~~~~~~Test 36: Test creating a course with unqualified Lab Tech: (2 marks)~~~~~~~");
-//        alec.addCourseToInstructorAbilities("COMP2008");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: The Lab Tech is not qualified to host the lab");
-//        System.out.printf("%nActual output:   ");
-//        try {
-//            CourseWithLab comp2008 = new CourseWithLab(alec, "COMP2008", "UI Design", "E208", DayOfWeek.THURSDAY,
-//                    LocalTime.parse("13:00"), 3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("15:00"));
-//
-//            failedTest.add("Test 36");
-//        } catch (IllegalArgumentException e) {
-//            System.out.print(e);
-//            marks += 2;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test 36  **/
+        System.out.printf("%n%n~~~~~~~Test 36: Test creating a course with unqualified Lab Tech: (2 marks)~~~~~~~");
+        alec.addCourseToInstructorAbilities("COMP2008");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: The Lab Tech is not qualified to host the lab");
+        System.out.printf("%nActual output:   ");
+        try {
+            CourseWithLab comp2008 = new CourseWithLab(alec, "COMP2008", "UI Design", "E208", DayOfWeek.THURSDAY,
+                    LocalTime.parse("13:00"), 3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("15:00"));
+
+            failedTest.add("Test 36");
+        } catch (IllegalArgumentException e) {
+            System.out.print(e);
+            marks += 2;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  37 **/
 //        System.out.printf("%n%n~~~~~~~Test 37: Test creating a course with invalid lab time: (2 marks)~~~~~~~");
