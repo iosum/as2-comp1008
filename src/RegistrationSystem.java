@@ -383,22 +383,22 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  26 **/
-//        System.out.printf("%n%n~~~~~~~Test 26: Test adding more than the max # of Students allowed in a Course (1 marks)~~~~~~~");
-//        comp1008.addStudent(st3);
-//        comp1008.addStudent(st4);
-//        System.out.printf("%nExpected output: Student was not added because the course is full");
-//        System.out.printf("%nActual output:   %s", comp1008.addStudent(st5));
-//        if (comp1008.addStudent(st5).equals("Student was not added because the course is full")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 26");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+
+        /**Test  26 **/
+        System.out.printf("%n%n~~~~~~~Test 26: Test adding more than the max # of Students allowed in a Course (1 marks)~~~~~~~");
+        comp1008.addStudent(st3);
+        comp1008.addStudent(st4);
+        System.out.printf("%nExpected output: Student was not added because the course is full");
+        System.out.printf("%nActual output:   %s", comp1008.addStudent(st5));
+        if (comp1008.addStudent(st5).equals("Student was not added because the course is full")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 26");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  27  **/
 //        System.out.printf("%n%n~~~~~~~Test 27: Test adding a suspended student to a Course(1 marks)~~~~~~~");
 //        st4.suspendStudent();

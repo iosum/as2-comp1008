@@ -11,8 +11,10 @@ public class Course {
     private LocalTime courseTime;
     private int hours;
     public ArrayList<Student> students;
+    private int maxStudents;
 
-    public Course(Instructor instructor, String courseCode, String courseDescription, String courseRoom, DayOfWeek courseDay, LocalTime courseTime, int hours) {
+    public Course(Instructor instructor, String courseCode, String courseDescription, String courseRoom,
+                  DayOfWeek courseDay, LocalTime courseTime, int hours) {
         this.instructor = instructor;
         this.courseCode = courseCode;
         this.courseDescription = courseDescription;
@@ -21,6 +23,22 @@ public class Course {
         this.courseTime = courseTime;
         this.hours = hours;
         students = new ArrayList<>();
+    }
+
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.students = students;
+    }
+
+    public int getMaxStudents() {
+        return maxStudents;
+    }
+
+    public void setMaxStudents(int maxStudents) {
+        this.maxStudents = maxStudents;
     }
 
     public Instructor getInstructor() {
@@ -80,7 +98,7 @@ public class Course {
     }
 
     public String toString() {
-        return String.format("%s-%s", courseCode,courseDescription);
+        return String.format("%s-%s", courseCode, courseDescription);
     }
 
     public String getClassRoom() {
@@ -99,13 +117,18 @@ public class Course {
         return getInstructor();
     }
 
-    public void addStudent(Student newStudent) {
+    public String addStudent(Student newStudent) {
+        String result = "";
         students.add(newStudent);
+        if(students.size() >= maxStudents) {
+            result += "Student was not added because the course is full";
+        }
+        return result;
     }
 
     public String displayTheClassList() {
         String classList = "";
-        for (Student student:students) {
+        for (Student student : students) {
             classList += student;
         }
         return classList;
