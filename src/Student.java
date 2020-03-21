@@ -174,4 +174,8 @@ public class Student {
     public int getNoOfYearEnrolled() {
         return enrollmentDate.getYear();
     }
+
+    public void reinstateStudent() {
+        goodStanding = true;
+    }
 }

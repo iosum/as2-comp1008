@@ -365,24 +365,24 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  25 **/
-//        System.out.printf("%n%n~~~~~~~Test 25: Test adding Students to the class (1 marks)~~~~~~~");
-//        st1.reinstateStudent();
-//        Student st3 = new Student("Howie", "Doohan", "12 Greeter Ln", "Thornhill", "H9T A3S", "COPR", 10002, LocalDate.of(2011, Month.AUGUST, 21), LocalDate.of(1997, Month.APRIL, 16));
-//        Student st4 = new Student("Jerry", "Atrick", "39 Elder Ave", "Newmarket", "A6T D3S", "COPR", 10003, LocalDate.of(2008, Month.AUGUST, 22), LocalDate.of(1943, Month.MARCH, 23));
-//        Student st5 = new Student("Leigh", "King", "182 Drip Drive", "Etobicoke", "Q6X D3S", "COPA", 10004, LocalDate.of(2010, Month.AUGUST, 21), LocalDate.of(2000, Month.FEBRUARY, 14));
-//        comp1008.addStudent(st1);
-//        System.out.printf("%nExpected output: The course list has this student: Colin Allcars, student number: 223");
-//        System.out.printf("%nActual output:   The course list has this student: %s", comp1008.displayTheClassList());
-//        if (comp1008.displayTheClassList().equals("Colin Allcars, student number: 223")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 25");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  25 **/
+        System.out.printf("%n%n~~~~~~~Test 25: Test adding Students to the class (1 marks)~~~~~~~");
+        st1.reinstateStudent();
+        Student st3 = new Student("Howie", "Doohan", "12 Greeter Ln", "Thornhill", "H9T A3S", "COPR", 10002, LocalDate.of(2011, Month.AUGUST, 21), LocalDate.of(1997, Month.APRIL, 16));
+        Student st4 = new Student("Jerry", "Atrick", "39 Elder Ave", "Newmarket", "A6T D3S", "COPR", 10003, LocalDate.of(2008, Month.AUGUST, 22), LocalDate.of(1943, Month.MARCH, 23));
+        Student st5 = new Student("Leigh", "King", "182 Drip Drive", "Etobicoke", "Q6X D3S", "COPA", 10004, LocalDate.of(2010, Month.AUGUST, 21), LocalDate.of(2000, Month.FEBRUARY, 14));
+        comp1008.addStudent(st1);
+        System.out.printf("%nExpected output: The course list has this student: Colin Allcars, student number: 223");
+        System.out.printf("%nActual output:   The course list has this student: %s", comp1008.displayTheClassList());
+        if (comp1008.displayTheClassList().equals("Colin Allcars, student number: 223")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 25");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  26 **/
 //        System.out.printf("%n%n~~~~~~~Test 26: Test adding more than the max # of Students allowed in a Course (1 marks)~~~~~~~");

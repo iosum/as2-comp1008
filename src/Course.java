@@ -1,5 +1,6 @@
 import java.time.DayOfWeek;
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 public class Course {
     private Instructor instructor;
@@ -9,6 +10,7 @@ public class Course {
     private DayOfWeek courseDay;
     private LocalTime courseTime;
     private int hours;
+    public ArrayList<Student> students;
 
     public Course(Instructor instructor, String courseCode, String courseDescription, String courseRoom, DayOfWeek courseDay, LocalTime courseTime, int hours) {
         this.instructor = instructor;
@@ -18,6 +20,7 @@ public class Course {
         this.courseDay = courseDay;
         this.courseTime = courseTime;
         this.hours = hours;
+        students = new ArrayList<>();
     }
 
     public Instructor getInstructor() {
@@ -94,5 +97,17 @@ public class Course {
 
     public Instructor getInstructorToTeach() {
         return getInstructor();
+    }
+
+    public void addStudent(Student newStudent) {
+        students.add(newStudent);
+    }
+
+    public String displayTheClassList() {
+        String classList = "";
+        for (Student student:students) {
+            classList += student;
+        }
+        return classList;
     }
 }
