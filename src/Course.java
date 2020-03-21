@@ -27,4 +27,12 @@ public class Course {
     public String getClassRoom() {
         return courseRoom;
     }
+
+    public String getCourseDayAndTime() {
+        String time = "";
+        time = time + courseDay;
+        time = time + "'s, starting at " + courseTime;
+
+        return time;
+    }
 }

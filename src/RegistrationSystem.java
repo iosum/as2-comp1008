@@ -340,19 +340,19 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  23 **/
-//        System.out.printf("%n%n~~~~~~~Test 23: Test the getCourseDayAndTime() method (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: The course is hosted on: TUESDAY's, starting at 11:00");
-//        System.out.printf("%nActual output:   The course is hosted on: %s", comp1008.getCourseDayAndTime());
-//        if (comp1008.getCourseDayAndTime().equals("TUESDAY's, starting at 11:00")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 23");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test  23 **/
+        System.out.printf("%n%n~~~~~~~Test 23: Test the getCourseDayAndTime() method (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: The course is hosted on: TUESDAY's, starting at 11:00");
+        System.out.printf("%nActual output:   The course is hosted on: %s", comp1008.getCourseDayAndTime());
+        if (comp1008.getCourseDayAndTime().equals("TUESDAY's, starting at 11:00")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 23");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  24 **/
 //        System.out.printf("%n%n~~~~~~~Test 24: Test the getInstructorToTeach method (1 mark)~~~~~~~");
 //        System.out.printf("%nExpected output: The course is taught by: Frank Enstein");
