@@ -51,4 +51,10 @@ public class CourseWithLab extends Course{
     public String toString() {
         return String.format("%s-%s with lab", courseCode, courseDescription);
     }
+
+    public String getLabClassAndTime() {
+        String time = "room: " + labRoom + ", ";
+        time += labDay + " starting at " + labTime;
+        return time;
+    }
 }

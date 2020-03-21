@@ -577,19 +577,19 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  38 **/
-//        System.out.printf("%n%n~~~~~~~Test 38: Test returning the lab room, day and time: (2 marks)~~~~~~~");
-//        System.out.printf("%nExpected output: room: E204, WEDNESDAY starting at 15:00");
-//        System.out.printf("%nActual output:   %s", comp2004.getLabClassAndTime());
-//        if (comp2004.getLabClassAndTime().equals("room: E204, WEDNESDAY starting at 15:00")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 38");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  38 **/
+        System.out.printf("%n%n~~~~~~~Test 38: Test returning the lab room, day and time: (2 marks)~~~~~~~");
+        System.out.printf("%nExpected output: room: E204, WEDNESDAY starting at 15:00");
+        System.out.printf("%nActual output:   %s", comp2004.getLabClassAndTime());
+        if (comp2004.getLabClassAndTime().equals("room: E204, WEDNESDAY starting at 15:00")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 38");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  39 **/
 //        System.out.printf("%n%n~~~~~~~Test 39: Test returning the Instructor and lab tech name: (2 marks)~~~~~~~");
