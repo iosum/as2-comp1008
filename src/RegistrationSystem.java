@@ -413,19 +413,19 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test   28 **/
-//        System.out.printf("%n%n~~~~~~~Test 28: Test increasing the max size of the class to 80 (2 marks)~~~~~~~");
-//        System.out.printf("%nExpected output: Max class size = 40, it has been set to 40");
-//        System.out.printf("%nActual output:   %s", comp1008.setClassSize(80));
-//        if (comp1008.setClassSize(80).equals("Max class size = 40, it has been set to 40") && comp1008.getClassSize() == 40) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 28");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+        /**Test   28 **/
+        System.out.printf("%n%n~~~~~~~Test 28: Test increasing the max size of the class to 80 (2 marks)~~~~~~~");
+        System.out.printf("%nExpected output: Max class size = 40, it has been set to 40");
+        System.out.printf("%nActual output:   %s", comp1008.setClassSize(80));
+        if (comp1008.setClassSize(80).equals("Max class size = 40, it has been set to 40") && comp1008.getClassSize() == 40) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 28");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  29 **/
 //        System.out.printf("%n%n~~~~~~~Test 29: Test creating a course with an invalid early start time (1 marks)~~~~~~~");
 //        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Course start time must be between 08:00-18:00");

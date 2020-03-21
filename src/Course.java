@@ -12,6 +12,7 @@ public class Course {
     private int hours;
     public ArrayList<Student> students;
     private int maxStudents;
+    private int classSize;
 
     public Course(Instructor instructor, String courseCode, String courseDescription, String courseRoom,
                   DayOfWeek courseDay, LocalTime courseTime, int hours) {
@@ -135,5 +136,19 @@ public class Course {
             classList += student;
         }
         return classList;
+    }
+
+    public String setClassSize(int classSize) {
+        String result = "";
+        if(classSize > 40) {
+            classSize = 40;
+            maxStudents = 40;
+            result += "Max class size = 40, it has been set to 40";
+        }
+        return result;
+    }
+
+    public int getClassSize() {
+        return maxStudents;
     }
 }
