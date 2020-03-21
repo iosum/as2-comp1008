@@ -326,20 +326,20 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  22 **/
-//        System.out.printf("%n%n~~~~~~~Test 22: Test the getRoom method (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: The course COMP1008-Intro to OOP is in room: E202");
-//        System.out.printf("%nActual output:   The course %s is in room: %s", comp1008, comp1008.getClassRoom());
-//        if (comp1008.getClassRoom().equals("E202")) {
-//            marks++;
-//        }
-//        else {
-//            failedTest.add("Test 22");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
+
+        /**Test  22 **/
+        System.out.printf("%n%n~~~~~~~Test 22: Test the getRoom method (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: The course COMP1008-Intro to OOP is in room: E202");
+        System.out.printf("%nActual output:   The course %s is in room: %s", comp1008, comp1008.getClassRoom());
+        if (comp1008.getClassRoom().equals("E202")) {
+            marks++;
+        }
+        else {
+            failedTest.add("Test 22");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+
 //        /**Test  23 **/
 //        System.out.printf("%n%n~~~~~~~Test 23: Test the getCourseDayAndTime() method (1 mark)~~~~~~~");
 //        System.out.printf("%nExpected output: The course is hosted on: TUESDAY's, starting at 11:00");

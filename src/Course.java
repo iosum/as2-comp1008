@@ -23,4 +23,8 @@ public class Course {
     public String toString() {
         return String.format("%s-%s", courseCode,courseDescription);
     }
+
+    public String getClassRoom() {
+        return courseRoom;
+    }
 }
