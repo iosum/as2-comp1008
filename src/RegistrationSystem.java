@@ -524,24 +524,24 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  35  **/
-//        System.out.printf("%n%n~~~~~~~Test 35: Test creating a CourseWithLab that has an unqualified Instructor: (2 marks)~~~~~~~");
-//        Instructor alec = new Instructor("Alec", "Tricity", 1000014, "6 Spark St.", "Barrie", "L3S 1A7", LocalDate.of(2004, Month.JANUARY, 01), LocalDate.of(1976, Month.SEPTEMBER, 6));
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Professor Alec Tricity is not qualified to teach COMP2008");
-//        System.out.printf("%nActual output:   ");
-//        try {
-//            CourseWithLab comp2008 = new CourseWithLab(alec, "COMP2008", "UI Design", "E208", DayOfWeek.THURSDAY,
-//                    LocalTime.parse("13:00"), 3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("15:00"));
-//
-//            failedTest.add("Test 35");
-//
-//        } catch (IllegalArgumentException e) {
-//            System.out.print(e);
-//            marks += 2;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  35  **/
+        System.out.printf("%n%n~~~~~~~Test 35: Test creating a CourseWithLab that has an unqualified Instructor: (2 marks)~~~~~~~");
+        Instructor alec = new Instructor("Alec", "Tricity", 1000014, "6 Spark St.", "Barrie", "L3S 1A7", LocalDate.of(2004, Month.JANUARY, 01), LocalDate.of(1976, Month.SEPTEMBER, 6));
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Professor Alec Tricity is not qualified to teach COMP2008");
+        System.out.printf("%nActual output:   ");
+        try {
+            CourseWithLab comp2008 = new CourseWithLab(alec, "COMP2008", "UI Design", "E208", DayOfWeek.THURSDAY,
+                    LocalTime.parse("13:00"), 3, labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("15:00"));
+
+            failedTest.add("Test 35");
+
+        } catch (IllegalArgumentException e) {
+            System.out.print(e);
+            marks += 2;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test 36  **/
 //        System.out.printf("%n%n~~~~~~~Test 36: Test creating a course with unqualified Lab Tech: (2 marks)~~~~~~~");
