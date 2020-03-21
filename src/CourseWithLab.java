@@ -57,4 +57,8 @@ public class CourseWithLab extends Course{
         time += labDay + " starting at " + labTime;
         return time;
     }
+
+    public Instructor getLabTech() {
+        return labTech;
+    }
 }

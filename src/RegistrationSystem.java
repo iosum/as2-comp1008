@@ -590,19 +590,19 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  39 **/
-//        System.out.printf("%n%n~~~~~~~Test 39: Test returning the Instructor and lab tech name: (2 marks)~~~~~~~");
-//        System.out.printf("%nExpected output: Course: COMP2004-FX GUIs with lab, Instructor: Karen Vader, lab tech: Dan Gerus");
-//        System.out.printf("%nActual output:   Course: %s, Instructor: %s, lab tech: %s", comp2004, comp2004.getInstructorToTeach(), comp2004.getLabTech());
-//        if (comp2004.getInstructorToTeach().equals(karenV) && comp2004.getLabTech().equals(labGuy)) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 39");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  39 **/
+        System.out.printf("%n%n~~~~~~~Test 39: Test returning the Instructor and lab tech name: (2 marks)~~~~~~~");
+        System.out.printf("%nExpected output: Course: COMP2004-FX GUIs with lab, Instructor: Karen Vader, lab tech: Dan Gerus");
+        System.out.printf("%nActual output:   Course: %s, Instructor: %s, lab tech: %s", comp2004, comp2004.getInstructorToTeach(), comp2004.getLabTech());
+        if (comp2004.getInstructorToTeach().equals(karenV) && comp2004.getLabTech().equals(labGuy)) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 39");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test   40 **/
 //        System.out.printf("%n%n~~~~~~~Test 40: Test adding a CoursesCompleted to a Student: (2 marks)~~~~~~~");
