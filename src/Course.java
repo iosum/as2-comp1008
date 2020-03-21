@@ -1,4 +1,5 @@
 import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
@@ -21,7 +22,7 @@ public class Course {
         this.courseDescription = courseDescription;
         this.courseRoom = courseRoom;
         this.courseDay = courseDay;
-        this.courseTime = courseTime;
+        setCourseTime(courseTime);
         this.hours = hours;
         students = new ArrayList<>();
     }
@@ -87,7 +88,12 @@ public class Course {
     }
 
     public void setCourseTime(LocalTime courseTime) {
-        this.courseTime = courseTime;
+        if(courseTime.getHour() >= 8 && courseTime.getHour() < 18) {
+            this.courseTime = courseTime;
+        }
+        else {
+            throw new IllegalArgumentException("Course start time must be between 08:00-18:00");
+        }
     }
 
     public int getHours() {

@@ -426,21 +426,21 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  29 **/
-//        System.out.printf("%n%n~~~~~~~Test 29: Test creating a course with an invalid early start time (1 marks)~~~~~~~");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Course start time must be between 08:00-18:00");
-//        System.out.printf("%nActual output:   ");
-//        frank.addCourseToInstructorAbilities("COMP2003");
-//        try {
-//            Course comp2003 = new Course(frank, "COMP2003", "Intro to DB", "E204", DayOfWeek.THURSDAY, LocalTime.parse("06:00"), 20);
-//
-//            failedTest.add("Test 29");
-//        } catch (IllegalArgumentException e) {
-//            System.out.print(e);
-//            marks += 1;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+        /**Test  29 **/
+        System.out.printf("%n%n~~~~~~~Test 29: Test creating a course with an invalid early start time (1 marks)~~~~~~~");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Course start time must be between 08:00-18:00");
+        System.out.printf("%nActual output:   ");
+        frank.addCourseToInstructorAbilities("COMP2003");
+        try {
+            Course comp2003 = new Course(frank, "COMP2003", "Intro to DB", "E204", DayOfWeek.THURSDAY, LocalTime.parse("06:00"), 20);
+
+            failedTest.add("Test 29");
+        } catch (IllegalArgumentException e) {
+            System.out.print(e);
+            marks += 1;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  30  **/
 //        System.out.printf("%n%n~~~~~~~Test 30: Test creating a course with an invalid late start time (1 marks)~~~~~~~");
