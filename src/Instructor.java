@@ -20,9 +20,20 @@ public class Instructor {
         this.streetAddress = streetAddress;
         this.city = city;
         this.postalCode = postalCode;
-        this.hireDate = hireDate;
+        setHireDate(hireDate);
         setBirthday(birthday);
         courses = new ArrayList<>();
+    }
+
+    private void setHireDate(LocalDate input) {
+        LocalDate today = LocalDate.now();
+        long diff = Period.between(input, today).getYears();
+
+        if(diff > 80){
+            throw new IllegalArgumentException(input + " as a hire date would mean Anita started working over " + 80 + " years ago");
+        } else {
+            hireDate = input;
+        }
     }
 
     public LocalDate getBirthday() {

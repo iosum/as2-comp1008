@@ -291,24 +291,24 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  20 **/
-//        System.out.printf("%n%n~~~~~~~Test 20: Test creating an Instructor that has an invalid hire date (2 marks) ~~~~~~~");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: 1910-08-22 as a hire date would mean Anita started working over 80 years ago");
-//        System.out.printf("%nActual output:   ");
-//        try {
-//            Instructor hiredLongAgo = new Instructor("Anita", "Knapp", 1000014, "16 Ancient Ave", "Innisfil", "W32S 1A6",
-//                    LocalDate.of(1910, Month.AUGUST, 22), LocalDate.of(1981, Month.DECEMBER, 21));
-//
-//            failedTest.add("Test 20");
-//        } catch (IllegalArgumentException e) {
-//            System.out.print(e);
-//            marks += 2;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//        System.out.printf("%n%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
-//        System.out.printf("%n!~~               Course Tests                 ~~!");
-//        System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
+        /**Test  20 **/
+        System.out.printf("%n%n~~~~~~~Test 20: Test creating an Instructor that has an invalid hire date (2 marks) ~~~~~~~");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: 1910-08-22 as a hire date would mean Anita started working over 80 years ago");
+        System.out.printf("%nActual output:   ");
+        try {
+            Instructor hiredLongAgo = new Instructor("Anita", "Knapp", 1000014, "16 Ancient Ave", "Innisfil", "W32S 1A6",
+                    LocalDate.of(1910, Month.AUGUST, 22), LocalDate.of(1981, Month.DECEMBER, 21));
+
+            failedTest.add("Test 20");
+        } catch (IllegalArgumentException e) {
+            System.out.print(e);
+            marks += 2;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+        System.out.printf("%n%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
+        System.out.printf("%n!~~               Course Tests                 ~~!");
+        System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
 
 
 //        /**Test  21  **/
