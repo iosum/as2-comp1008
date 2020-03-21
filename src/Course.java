@@ -25,6 +25,16 @@ public class Course {
         setCourseTime(courseTime);
         this.hours = hours;
         students = new ArrayList<>();
+        setProf(instructor);
+    }
+
+    public Instructor setProf(Instructor addProf){
+        if(addProf.instructorCanTeach(courseCode) == true){
+            return addProf;
+        } else {
+            instructor = null;
+            throw new IllegalArgumentException("Professor " + addProf.toString() + " is not qualified to teach " + courseCode);
+        }
     }
 
     public ArrayList<Student> getStudents() {
@@ -48,6 +58,7 @@ public class Course {
     }
 
     public void setInstructor(Instructor instructor) {
+
         this.instructor = instructor;
     }
 
@@ -175,4 +186,5 @@ public class Course {
             return false;
         }
     }
+
 }

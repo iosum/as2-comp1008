@@ -487,26 +487,26 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  33 **/
-//        System.out.printf("%n%n~~~~~~~Test 33: Test to ensure invalid Instructor will not be added: (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Professor Frank Enstein is not qualified to teach COMP9999");
-//        System.out.printf("%nActual output:   ");
-//        try {
-//            Course comp9999 = new Course(frank, "COMP9999", "Swift 101", "B230", DayOfWeek.THURSDAY, LocalTime.parse("13:00"), 20);
-//
-//            failedTest.add("Test 33");
-//
-//        } catch (IllegalArgumentException e) {
-//            System.out.print(e);
-//            marks++;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//        System.out.printf("%n%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
-//        System.out.printf("%n!~~        Course With lab Tests               ~~!");
-//        System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
-//
+
+        /**Test  33 **/
+        System.out.printf("%n%n~~~~~~~Test 33: Test to ensure invalid Instructor will not be added: (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: Professor Frank Enstein is not qualified to teach COMP9999");
+        System.out.printf("%nActual output:   ");
+        try {
+            Course comp9999 = new Course(frank, "COMP9999", "Swift 101", "B230", DayOfWeek.THURSDAY, LocalTime.parse("13:00"), 20);
+
+            failedTest.add("Test 33");
+
+        } catch (IllegalArgumentException e) {
+            System.out.print(e);
+            marks++;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
+        System.out.printf("%n%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
+        System.out.printf("%n!~~        Course With lab Tests               ~~!");
+        System.out.printf("%n!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!");
+
 //
 //        /**Test  34  **/
 //        System.out.printf("%n%n~~~~~~~Test 34: Test creating a valid lab course: (2 marks)~~~~~~~");
