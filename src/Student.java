@@ -214,4 +214,20 @@ public class Student {
     }
 
 
+    public boolean hasCompleted(String course) {
+        int grades = 0;
+
+        for (CompletedCourse completedCourse : completedCourses) {
+            if(completedCourse.getCourse().getCourseCode() == course) {
+                grades = completedCourse.getGrade();
+                break;
+            }
+        }
+
+        if(grades < 50){
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
