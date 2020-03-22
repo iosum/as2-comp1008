@@ -662,19 +662,19 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  44 **/
-//        System.out.printf("%n%n~~~~~~~Test 44: Test adding a Student without the required prerequisite to a CourseWithLab: (2 marks)~~~~~~~");
-//        System.out.printf("%nExpected output: Student has not completed the prerequisite course: COMP1008");
-//        System.out.printf("%nActual output:   %s", comp2020.addStudent(st2));
-//        if (comp2020.addStudent(st2).equals("Student has not completed the prerequisite course: COMP1008")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 44");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  44 **/
+        System.out.printf("%n%n~~~~~~~Test 44: Test adding a Student without the required prerequisite to a CourseWithLab: (2 marks)~~~~~~~");
+        System.out.printf("%nExpected output: Student has not completed the prerequisite course: COMP1008");
+        System.out.printf("%nActual output:   %s", comp2020.addStudent(st2));
+        if (comp2020.addStudent(st2).equals("Student has not completed the prerequisite course: COMP1008")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 44");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  45 **/
 //        System.out.printf("%n%n~~~~~~~Test 45: Test the Student.hasCompleted method with a failing grade: (2 marks)~~~~~~~");

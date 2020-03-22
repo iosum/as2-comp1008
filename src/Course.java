@@ -172,7 +172,7 @@ public class Course {
             }
         }
 
-        if (!newStudent.studentInGoodStanding()) {
+        else if (!newStudent.studentInGoodStanding()) {
             result = "The Student is not in good standing and cannot join the course.";
         }
         else if (students.size() >= maxStudents) {
