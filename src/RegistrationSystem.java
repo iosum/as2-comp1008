@@ -717,21 +717,21 @@ public class RegistrationSystem {
         }
 
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
-//
-//        /**Test 48  **/
-//        System.out.printf("%n%n~~~~~~~Test 48: Test adding an invalid grade for a student (1 mark)~~~~~~~");
-//        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: grade must be 0-100 inclusive");
-//        System.out.printf("%nActual output:   ");
-//        try {
-//            st2.addCompletedCourse(comp2020, 101);
-//            failedTest.add("Test 48");
-//        } catch (IllegalArgumentException e) {
-//            System.out.print(e);
-//            marks++;
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+
+        /**Test 48  **/
+        System.out.printf("%n%n~~~~~~~Test 48: Test adding an invalid grade for a student (1 mark)~~~~~~~");
+        System.out.printf("%nExpected output: java.lang.IllegalArgumentException: grade must be 0-100 inclusive");
+        System.out.printf("%nActual output:   ");
+        try {
+            st2.addCompletedCourse(comp2020, 101);
+            failedTest.add("Test 48");
+        } catch (IllegalArgumentException e) {
+            System.out.print(e);
+            marks++;
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /****                       Important                *******/
 //        System.out.printf("%n%n~~~~~~~Test 49: Code comments (5 marks)~~~~~~~");
