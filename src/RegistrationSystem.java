@@ -690,19 +690,19 @@ public class RegistrationSystem {
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
 
-//        /**Test  46 **/
-//        System.out.printf("%n%n~~~~~~~Test 46: Test the hasCompleted() method after retaking a course and getting a passing grade: (2 marks)~~~~~~~");
-//        st2.addCompletedCourse(comp1008, 88);
-//        System.out.printf("%nExpected output: Testing st2.hasCompleted(COMP1008) returns: true");
-//        System.out.printf("%nActual output:   Testing st2.hasCompleted(COMP1008) returns: %s", st2.hasCompleted("COMP1008"));
-//        if (st2.hasCompleted("COMP1008")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 46");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+        /**Test  46 **/
+        System.out.printf("%n%n~~~~~~~Test 46: Test the hasCompleted() method after retaking a course and getting a passing grade: (2 marks)~~~~~~~");
+        st2.addCompletedCourse(comp1008, 88);
+        System.out.printf("%nExpected output: Testing st2.hasCompleted(COMP1008) returns: true");
+        System.out.printf("%nActual output:   Testing st2.hasCompleted(COMP1008) returns: %s", st2.hasCompleted("COMP1008"));
+        if (st2.hasCompleted("COMP1008")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 46");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  47  **/
 //        System.out.printf("%n%n~~~~~~~Test 47: Test adding an invalid grade for a student (1 mark)~~~~~~~");
