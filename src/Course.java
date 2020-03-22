@@ -15,7 +15,7 @@ public class Course {
     private int maxStudents;
     private int classSize;
 
-
+    private String prerequisiteCourse;
 
     public Course(Instructor instructor, String courseCode, String courseDescription, String courseRoom,
                   DayOfWeek courseDay, LocalTime courseTime, int hours) {
@@ -28,6 +28,20 @@ public class Course {
         this.hours = hours;
         students = new ArrayList<>();
         setProf(instructor);
+    }
+
+    public Course(Instructor instructor, String courseCode, String courseDescription, 
+                  String courseRoom, DayOfWeek courseDay, LocalTime courseTime, 
+                  int hours, String prerequisiteCourse) {
+       this.instructor = instructor;
+       this.courseCode = courseCode;
+       this.courseDescription = courseDescription;
+       this.courseRoom = courseRoom;
+       this.courseDay = courseDay;
+       this.courseTime = courseTime;
+       this.hours = hours;
+       this.prerequisiteCourse = prerequisiteCourse;
+
     }
 
     public Instructor setProf(Instructor addProf){
@@ -187,6 +201,10 @@ public class Course {
         else {
             return false;
         }
+    }
+
+    public String checkPrerequisite() {
+        return prerequisiteCourse;
     }
 
 }

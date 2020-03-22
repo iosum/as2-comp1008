@@ -617,21 +617,21 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  41  **/
-//        System.out.printf("%n%n~~~~~~~Test 41: Test adding a Course with a prerequisite: (2 marks)~~~~~~~");
-//        frank.addCourseToInstructorAbilities("COMP2020");
-//        Course comp2020 = new Course(frank, "COMP2020", "Swift 101", "B230", DayOfWeek.THURSDAY, LocalTime.parse("13:00"), 20, "COMP1008");
-//        System.out.printf("%nExpected output: Course: COMP2020-Swift 101 has prerequisite: COMP1008");
-//        System.out.printf("%nActual output:   Course: %s has prerequisite: %s", comp2020, comp2020.checkPrerequisite());
-//        if (comp2020.checkPrerequisite().equals("COMP1008")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 41");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  41  **/
+        System.out.printf("%n%n~~~~~~~Test 41: Test adding a Course with a prerequisite: (2 marks)~~~~~~~");
+        frank.addCourseToInstructorAbilities("COMP2020");
+        Course comp2020 = new Course(frank, "COMP2020", "Swift 101", "B230", DayOfWeek.THURSDAY, LocalTime.parse("13:00"), 20, "COMP1008");
+        System.out.printf("%nExpected output: Course: COMP2020-Swift 101 has prerequisite: COMP1008");
+        System.out.printf("%nActual output:   Course: %s has prerequisite: %s", comp2020, comp2020.checkPrerequisite());
+        if (comp2020.checkPrerequisite().equals("COMP1008")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 41");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test   42 **/
 //        System.out.printf("%n%n~~~~~~~Test 42: Test adding a Student with the required prerequisite: (2 marks)~~~~~~~");
