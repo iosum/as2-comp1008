@@ -603,20 +603,20 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test   40 **/
-//        System.out.printf("%n%n~~~~~~~Test 40: Test adding a CoursesCompleted to a Student: (2 marks)~~~~~~~");
-//        st1.addCompletedCourse(comp1008, 88);
-//        System.out.printf("%nExpected output: student 223, has completed the following courses: [COMP1008-Intro to OOP grade=88]");
-//        System.out.printf("%nActual output:   student %s, has completed the following courses: %s", st1.getStudentNumber(), st1.getCoursesCompleted());
-//        if (st1.getCoursesCompleted().equals("[COMP1008-Intro to OOP grade=88]")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 40");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test   40 **/
+        System.out.printf("%n%n~~~~~~~Test 40: Test adding a CoursesCompleted to a Student: (2 marks)~~~~~~~");
+        st1.addCompletedCourse(comp1008, 88);
+        System.out.printf("%nExpected output: student 223, has completed the following courses: [COMP1008-Intro to OOP grade=88]");
+        System.out.printf("%nActual output:   student %s, has completed the following courses: %s", st1.getStudentNumber(), st1.getCoursesCompleted());
+        if (st1.getCoursesCompleted().equals("[COMP1008-Intro to OOP grade=88]")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 40");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  41  **/
 //        System.out.printf("%n%n~~~~~~~Test 41: Test adding a Course with a prerequisite: (2 marks)~~~~~~~");

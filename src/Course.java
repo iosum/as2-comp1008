@@ -15,6 +15,8 @@ public class Course {
     private int maxStudents;
     private int classSize;
 
+
+
     public Course(Instructor instructor, String courseCode, String courseDescription, String courseRoom,
                   DayOfWeek courseDay, LocalTime courseTime, int hours) {
         this.instructor = instructor;

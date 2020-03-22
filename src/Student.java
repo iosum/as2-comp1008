@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 
 public class Student {
     private String firstName;
@@ -13,6 +14,7 @@ public class Student {
     private LocalDate birthDate;
 
     private boolean goodStanding;
+    public ArrayList<CompletedCourse> completedCourses;
 
     public Student(String firstName, String lastName, String city, String streetAddress, String postalCode, String program, int studentNumber, LocalDate enrollmentDate, LocalDate birthDate) {
         this.firstName = firstName;
@@ -25,6 +27,7 @@ public class Student {
         this.enrollmentDate = enrollmentDate;
         setBirthDate(birthDate);
         this.goodStanding = true;
+        completedCourses = new ArrayList<>();
     }
 
     public String getFirstName() {
@@ -190,4 +193,25 @@ public class Student {
             this.birthDate = birthDate;
         }
     }
+
+    public void addCompletedCourse(Course addCourse, int grade) {
+        if(grade > 50 && grade < 100){
+            CompletedCourse course = new CompletedCourse(addCourse, grade);
+            completedCourses.add(course);
+        } else if (grade > 100 || grade < 0){
+            throw new IllegalArgumentException("grade must be 0-100 inclusive");
+        }
+    }
+
+    public String getCoursesCompleted() {
+
+            String courses = "[";
+            for (CompletedCourse course : completedCourses){
+                courses = courses + course.getCourse()+ " grade=" + course.getGrade();
+            }
+            return courses + "]";
+
+    }
+
+
 }
