@@ -30,24 +30,33 @@ public class Course {
         setProf(instructor);
     }
 
-    public Course(Instructor instructor, String courseCode, String courseDescription, 
-                  String courseRoom, DayOfWeek courseDay, LocalTime courseTime, 
+    public Course(Instructor instructor, String courseCode, String courseDescription,
+                  String courseRoom, DayOfWeek courseDay, LocalTime courseTime,
                   int hours, String prerequisiteCourse) {
-       this.instructor = instructor;
-       this.courseCode = courseCode;
-       this.courseDescription = courseDescription;
-       this.courseRoom = courseRoom;
-       this.courseDay = courseDay;
-       this.courseTime = courseTime;
-       this.hours = hours;
-       this.prerequisiteCourse = prerequisiteCourse;
-
+        this.instructor = instructor;
+        this.courseCode = courseCode;
+        this.courseDescription = courseDescription;
+        this.courseRoom = courseRoom;
+        this.courseDay = courseDay;
+        this.courseTime = courseTime;
+        this.hours = hours;
+        this.prerequisiteCourse = prerequisiteCourse;
+        students = new ArrayList<>();
     }
 
-    public Instructor setProf(Instructor addProf){
-        if(addProf.instructorCanTeach(courseCode) == true){
+    public String getPrerequisiteCourse() {
+        return prerequisiteCourse;
+    }
+
+    public void setPrerequisiteCourse(String prerequisiteCourse) {
+        this.prerequisiteCourse = prerequisiteCourse;
+    }
+
+    public Instructor setProf(Instructor addProf) {
+        if (addProf.instructorCanTeach(courseCode) == true) {
             return addProf;
-        } else {
+        }
+        else {
             instructor = null;
             throw new IllegalArgumentException("Professor " + addProf.toString() + " is not qualified to teach " + courseCode);
         }
@@ -153,13 +162,26 @@ public class Course {
 
     public String addStudent(Student newStudent) {
         String result = "";
-        students.add(newStudent);
+
+        if (prerequisiteCourse != null) {
+            if (!newStudent.getCoursesCompleted().contains(prerequisiteCourse)) {
+                result = "Student has not completed the prerequisite course: " + prerequisiteCourse;
+            }
+            else {
+                students.add(newStudent);
+            }
+        }
+
         if (!newStudent.studentInGoodStanding()) {
-            result += "The Student is not in good standing and cannot join the course.";
+            result = "The Student is not in good standing and cannot join the course.";
         }
         else if (students.size() >= maxStudents) {
-            result += "Student was not added because the course is full";
+            result = "Student was not added because the course is full";
         }
+        else {
+            students.add(newStudent);
+        }
+
         return result;
     }
 

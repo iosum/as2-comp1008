@@ -632,20 +632,20 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test   42 **/
-//        System.out.printf("%n%n~~~~~~~Test 42: Test adding a Student with the required prerequisite: (2 marks)~~~~~~~");
-//        comp2020.addStudent(st1);
-//        System.out.printf("%nExpected output: Course: COMP2020-Swift 101 has the following students: Colin Allcars, student number: 223");
-//        System.out.printf("%nActual output:   Course: %s has the following students: %s", comp2020, comp2020.displayTheClassList());
-//        if (comp2020.displayTheClassList().equals("Colin Allcars, student number: 223")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 42");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test   42 **/
+        System.out.printf("%n%n~~~~~~~Test 42: Test adding a Student with the required prerequisite: (2 marks)~~~~~~~");
+        comp2020.addStudent(st1);
+        System.out.printf("%nExpected output: Course: COMP2020-Swift 101 has the following students: Colin Allcars, student number: 223");
+        System.out.printf("%nActual output:   Course: %s has the following students: %s", comp2020, comp2020.displayTheClassList());
+        if (comp2020.displayTheClassList().equals("Colin Allcars, student number: 223")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 42");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  43  **/
 //        System.out.printf("%n%n~~~~~~~Test 43: Test creating a valid CourseWithLab object with prerequisite: (2 marks)~~~~~~~");
