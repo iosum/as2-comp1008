@@ -13,6 +13,7 @@ public class CourseWithLab extends Course{
     private String labRoom;
     private DayOfWeek labDay;
     private LocalTime labTime;
+    private int numOfStudents;
 
     public CourseWithLab(Instructor instructor, String courseCode, String courseDescription, String courseRoom, DayOfWeek courseDay, LocalTime courseTime, int hours, Instructor labTech, String labRoom, DayOfWeek labDay, LocalTime labTime) {
         super(instructor, courseCode, courseDescription, courseRoom, courseDay, courseTime, hours);
@@ -27,6 +28,25 @@ public class CourseWithLab extends Course{
         this.labRoom = labRoom;
         this.labDay = labDay;
         setLabTime(labTime);
+    }
+
+    public CourseWithLab(Instructor instructor, String courseCode, String courseDescription, String courseRoom,
+                         DayOfWeek courseDay, LocalTime courseTime, int hours, String prerequisiteCourse,
+                         Instructor labTech, String labRoom, DayOfWeek labDay, LocalTime labTime) {
+        super(instructor, courseCode, courseDescription, courseRoom, courseDay, courseTime,hours, prerequisiteCourse);
+
+        this.instructor = instructor;
+        this.courseCode = courseCode;
+        this.courseDescription = courseDescription;
+        this.courseRoom = courseRoom;
+        this.courseDay = courseDay;
+        this.courseTime = courseTime;
+        this.hours = hours;
+        setLabTech(labTech);
+        this.labRoom = labRoom;
+        this.labDay = labDay;
+        this.labTime = labTime;
+
     }
 
     private void setLabTime(LocalTime labTime) {

@@ -646,22 +646,22 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /**Test  43  **/
-//        System.out.printf("%n%n~~~~~~~Test 43: Test creating a valid CourseWithLab object with prerequisite: (2 marks)~~~~~~~");
-//        alec.addCourseToInstructorAbilities("COMP2018");
-//        labGuy.addCourseToInstructorAbilities("COMP2018-LAB");
-//        CourseWithLab comp2018 = new CourseWithLab(alec, "COMP2018", "Nifty Stuff", "E208", DayOfWeek.FRIDAY, LocalTime.parse("15:00"), 3, "COMP1008", labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("09:00"));
-//        System.out.printf("%nExpected output: The course is COMP2018-Nifty Stuff with lab, prerequisite is COMP1008");
-//        System.out.printf("%nActual output:   The course is %s, prerequisite is %s", comp2018, comp2018.checkPrerequisite());
-//        if (comp2018.toString().equals("COMP2018-Nifty Stuff with lab") && comp2018.checkPrerequisite().equals("COMP1008")) {
-//            marks += 2;
-//        }
-//        else {
-//            failedTest.add("Test 43");
-//        }
-//        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
-//
+
+        /**Test  43  **/
+        System.out.printf("%n%n~~~~~~~Test 43: Test creating a valid CourseWithLab object with prerequisite: (2 marks)~~~~~~~");
+        alec.addCourseToInstructorAbilities("COMP2018");
+        labGuy.addCourseToInstructorAbilities("COMP2018-LAB");
+        CourseWithLab comp2018 = new CourseWithLab(alec, "COMP2018", "Nifty Stuff", "E208", DayOfWeek.FRIDAY, LocalTime.parse("15:00"), 3, "COMP1008", labGuy, "E204", DayOfWeek.WEDNESDAY, LocalTime.parse("09:00"));
+        System.out.printf("%nExpected output: The course is COMP2018-Nifty Stuff with lab, prerequisite is COMP1008");
+        System.out.printf("%nActual output:   The course is %s, prerequisite is %s", comp2018, comp2018.checkPrerequisite());
+        if (comp2018.toString().equals("COMP2018-Nifty Stuff with lab") && comp2018.checkPrerequisite().equals("COMP1008")) {
+            marks += 2;
+        }
+        else {
+            failedTest.add("Test 43");
+        }
+        System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
+
 //
 //        /**Test  44 **/
 //        System.out.printf("%n%n~~~~~~~Test 44: Test adding a Student without the required prerequisite to a CourseWithLab: (2 marks)~~~~~~~");
