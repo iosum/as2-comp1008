@@ -16,6 +16,18 @@ public class Student {
     private boolean goodStanding;
     public ArrayList<CompletedCourse> completedCourses;
 
+    /**
+     * constructor
+     * @param firstName
+     * @param lastName
+     * @param city
+     * @param streetAddress
+     * @param postalCode
+     * @param program
+     * @param studentNumber
+     * @param enrollmentDate
+     * @param birthDate
+     */
     public Student(String firstName, String lastName, String city, String streetAddress, String postalCode, String program, int studentNumber, LocalDate enrollmentDate, LocalDate birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -30,45 +42,91 @@ public class Student {
         completedCourses = new ArrayList<>();
     }
 
+    /**
+     * get first name
+     * @return
+     */
     public String getFirstName() {
         return firstName;
     }
+
+    /**
+     * set student first name
+     * @param firstName
+     */
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * get student last name
+     * @return
+     */
     public String getLastName() {
         return lastName;
     }
 
+    /**
+     * set student last name
+     * @param lastName
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * get student city
+     * @return
+     */
     public String getCity() {
         return city;
     }
+
+    /**
+     * set student city
+     * @param city
+     */
 
     public void setCity(String city) {
         this.city = city;
     }
 
+    /**
+     * get student street address
+     * @return
+     */
     public String getStreetAddress() {
         return streetAddress;
     }
 
+    /**
+     * set student street address
+     * @param streetAddress
+     */
     public void setStreetAddress(String streetAddress) {
         this.streetAddress = streetAddress;
     }
+
+    /**
+     * get student postal code
+     * @return
+     */
 
     public String getPostalCode() {
         return postalCode;
     }
 
+
+    /**
+     * set student postal code
+     * @param postalCode
+     */
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
+
+
 
     public String getProgram() {
         return program;
@@ -180,7 +238,7 @@ public class Student {
     }
 
     public void reinstateStudent() {
-        goodStanding = true;
+        this.goodStanding = true;
     }
 
     public void setBirthday(LocalDate birthDate) {
@@ -229,5 +287,9 @@ public class Student {
         } else {
             return true;
         }
+    }
+
+    public int getYearEnrolled() {
+        return enrollmentDate.getYear();
     }
 }

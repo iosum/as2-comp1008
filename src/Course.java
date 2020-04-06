@@ -162,7 +162,6 @@ public class Course {
 
     public String addStudent(Student newStudent) {
         String result = "";
-
         if (prerequisiteCourse != null) {
             if (!newStudent.getCoursesCompleted().contains(prerequisiteCourse)) {
                 result = "Student has not completed the prerequisite course: " + prerequisiteCourse;
@@ -171,11 +170,10 @@ public class Course {
                 students.add(newStudent);
             }
         }
-
         else if (!newStudent.studentInGoodStanding()) {
             result = "The Student is not in good standing and cannot join the course.";
         }
-        else if (students.size() >= maxStudents) {
+        else if (students.size() >= maxStudents && students.size()>0) {
             result = "Student was not added because the course is full";
         }
         else {
@@ -185,6 +183,10 @@ public class Course {
         return result;
     }
 
+    /**
+     * display the class list
+     * @return
+     */
     public String displayTheClassList() {
         String classList = "";
         for (Student student : students) {

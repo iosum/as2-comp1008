@@ -49,7 +49,7 @@ public class RegistrationSystem {
         }
 
 
-                /** Test 3**/
+        /** Test 3**/
         System.out.printf("%n%n~~~~~~~Test 3: Test the Student getAge() method with a birthday that has already happened this year: (1 mark)~~~~~~~");
         Student st2 = new Student("Gail", "Storm", "10 Tornado St", "Windsor", "H6T D3S", "COPR", 10001,
                 LocalDate.of(2010, Month.JANUARY, 22), LocalDate.of(1999, Month.DECEMBER, 31));
@@ -315,7 +315,8 @@ public class RegistrationSystem {
         System.out.printf("%n%n~~~~~~~Test 21: create a valid Instructor and then create a valid Course with the Instructor (1 marks)~~~~~~~");
         Instructor frank = new Instructor("Frank", "Enstein", 1000012, "10 Awesome Lane", "Barrie", "L2S 1A6", LocalDate.of(2010, Month.AUGUST, 22), LocalDate.of(1962, Month.JUNE, 6));
         frank.addCourseToInstructorAbilities("COMP1008");
-        Course comp1008 = new Course(frank, "COMP1008", "Intro to OOP", "E202", DayOfWeek.TUESDAY, LocalTime.parse("11:00"), 3);
+        Course comp1008 = new Course(frank, "COMP1008", "Intro to OOP",
+                "E202", DayOfWeek.TUESDAY, LocalTime.parse("11:00"), 3);
         System.out.printf("%nExpected output: The course is: COMP1008-Intro to OOP");
         System.out.printf("%nActual output:   The course is: %s", comp1008);        //note: this will actually call the course toString() method
         if (comp1008.toString().equals("COMP1008-Intro to OOP")) {
@@ -732,24 +733,24 @@ public class RegistrationSystem {
         }
         System.out.printf("%nYour total marks are now: %.0f/%.0f=%.1f%%", marks, totalMarks, marks / totalMarks * 100);
 
-//
-//        /****                       Important                *******/
-//        System.out.printf("%n%n~~~~~~~Test 49: Code comments (5 marks)~~~~~~~");
-//        System.out.printf("%nBe sure EVERY method has a comment prior to it in Javadoc style "
-//                + "that describes what the method will do.  ");
-//
-//        if (!failedTest.isEmpty()) {
-//            System.out.println("\n\n~~~~~~~~~~~~~~~~~~~~~List of failed tests~~~~~~~~~~~~~");
-//            failedTest.forEach((str) -> {
-//                System.out.print(str + ", ");
-//            });
-//        }
-//        else {
-//            failedTest.add("Test 40");
-//
-//        }
-//
-//        System.out.println("\n\n");
+        //
+        //        /****                       Important                *******/
+        //        System.out.printf("%n%n~~~~~~~Test 49: Code comments (5 marks)~~~~~~~");
+        //        System.out.printf("%nBe sure EVERY method has a comment prior to it in Javadoc style "
+        //                + "that describes what the method will do.  ");
+        //
+                if (!failedTest.isEmpty()) {
+                    System.out.println("\n\n~~~~~~~~~~~~~~~~~~~~~List of failed tests~~~~~~~~~~~~~");
+                    failedTest.forEach((str) -> {
+                        System.out.print(str + ", ");
+                    });
+                }
+                else {
+                    failedTest.add("Test 40");
+
+                }
+
+                System.out.println("\n\n");
 
 
     }
