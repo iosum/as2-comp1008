@@ -4,10 +4,13 @@
     <list default="true" id="ef77981e-ebc0-4bc8-aee0-dec3873f0b49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/as2-comp1008/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/as2-comp1008/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/as2-comp1008/RegistrationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/as2-comp1008/RegistrationSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/as2-comp1008/CourseWithLab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/as2-comp1008/CourseWithLab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/as2-comp1008/Instructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/as2-comp1008/Instructor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/as2-comp1008/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/as2-comp1008/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompletedCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompletedCourse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegistrationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistrationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CourseWithLab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CourseWithLab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
     <configuration name="RegistrationSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -81,22 +85,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584565700432" />
-    <state width="1237" height="361" key="GridCell.Tab.0.bottom" timestamp="1586197038491">
+    <state width="1237" height="293" key="GridCell.Tab.0.bottom" timestamp="1586198666784">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="361" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586197038491" />
-    <state width="1237" height="361" key="GridCell.Tab.0.center" timestamp="1586197038491">
+    <state width="1237" height="293" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586198666784" />
+    <state width="1237" height="293" key="GridCell.Tab.0.center" timestamp="1586198666784">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="361" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586197038491" />
-    <state width="1237" height="361" key="GridCell.Tab.0.left" timestamp="1586197038490">
+    <state width="1237" height="293" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586198666784" />
+    <state width="1237" height="293" key="GridCell.Tab.0.left" timestamp="1586198666784">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="361" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586197038490" />
-    <state width="1237" height="361" key="GridCell.Tab.0.right" timestamp="1586197038491">
+    <state width="1237" height="293" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586198666784" />
+    <state width="1237" height="293" key="GridCell.Tab.0.right" timestamp="1586198666784">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="361" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586197038491" />
+    <state width="1237" height="293" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586198666784" />
     <state width="1237" height="361" key="GridCell.Tab.1.bottom" timestamp="1586197038491">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -113,6 +117,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="361" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586197038491" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1586198799787">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586198799787" />
     <state x="91" y="0" key="new project wizard" timestamp="1584401088275">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -133,11 +141,6 @@
           <url>file://$PROJECT_DIR$/src/RegistrationSystem.java</url>
           <line>483</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RegistrationSystem.java</url>
-          <line>466</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

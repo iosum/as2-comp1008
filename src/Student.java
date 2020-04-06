@@ -43,39 +43,6 @@ public class Student {
     }
 
     /**
-     * get first name
-     * @return
-     */
-    public String getFirstName() {
-        return firstName;
-    }
-
-    /**
-     * set student first name
-     * @param firstName
-     */
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    /**
-     * get student last name
-     * @return
-     */
-    public String getLastName() {
-        return lastName;
-    }
-
-    /**
-     * set student last name
-     * @param lastName
-     */
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    /**
      * get student city
      * @return
      */
@@ -127,36 +94,19 @@ public class Student {
     }
 
 
-
-    public String getProgram() {
-        return program;
-    }
-
-    public void setProgram(String program) {
-        this.program = program;
-    }
+    /**
+     * get student number
+     * @return
+     */
 
     public int getStudentNumber() {
         return studentNumber;
     }
 
-    public void setStudentNumber(int studentNumber) {
-        this.studentNumber = studentNumber;
-    }
-
-    public LocalDate getEnrollmentDate() {
-        return enrollmentDate;
-    }
-
-    public void setEnrollmentDate(LocalDate enrollmentDate) {
-        this.enrollmentDate = enrollmentDate;
-    }
-
-    public LocalDate getBirthDate() {
-
-        return birthDate;
-    }
-
+    /**
+     * set valid birthday
+     * @param birthDate
+     */
     public void setBirthDate(LocalDate birthDate) {
         int age = LocalDate.now().getYear() - birthDate.getYear();
 
@@ -175,6 +125,10 @@ public class Student {
         }
     }
 
+    /**
+     * format the string
+     * @return
+     */
     @Override
     public String toString() {
         return String.format("%s %s, student number: %d", firstName, lastName, studentNumber);
@@ -212,16 +166,30 @@ public class Student {
         return age;
     }
 
+    /**
+     * change the address
+     * @param streetAddress
+     * @param city
+     * @param postalCode
+     */
     public void changeAddress(String streetAddress, String city, String postalCode) {
         setStreetAddress(streetAddress);
         setCity(city);
         setPostalCode(postalCode);
     }
 
+    /**
+     * get student's address and format
+     * @return
+     */
     public String getStudentAddress() {
         return String.format("%s %s %s", getStreetAddress(), getCity(), getPostalCode());
     }
 
+    /**
+     * check if a student is in a good standing
+     * @return
+     */
     public boolean studentInGoodStanding() {
         if(goodStanding == true) {
             return true;
@@ -229,18 +197,32 @@ public class Student {
         return false;
     }
 
+    /**
+     * suspend student
+     */
     public void suspendStudent() {
         goodStanding = false;
     }
 
+    /**
+     * gets the year of enrollment of student
+     * @return
+     */
     public int getNoOfYearEnrolled() {
         return enrollmentDate.getYear();
     }
 
+    /**
+     * reinstates student
+     */
     public void reinstateStudent() {
         this.goodStanding = true;
     }
 
+    /**
+     * sets the student's birthday
+     * @param birthDate
+     */
     public void setBirthday(LocalDate birthDate) {
         LocalDate today = LocalDate.now();
         long diff = Period.between(birthDate, today).getYears();
@@ -252,6 +234,11 @@ public class Student {
         }
     }
 
+    /**
+     * adds a course if a student completed
+     * @param addCourse
+     * @param grade
+     */
     public void addCompletedCourse(Course addCourse, int grade) {
         if(grade > 50 && grade < 100){
             CompletedCourse course = new CompletedCourse(addCourse, grade);
@@ -261,8 +248,11 @@ public class Student {
         }
     }
 
+    /**
+     * get all the completed courses from student
+     * @return
+     */
     public String getCoursesCompleted() {
-
             String courses = "[";
             for (CompletedCourse course : completedCourses){
                 courses = courses + course.getCourse()+ " grade=" + course.getGrade();
@@ -271,7 +261,11 @@ public class Student {
 
     }
 
-
+    /**
+     * check if the course completes or not
+     * @param course
+     * @return
+     */
     public boolean hasCompleted(String course) {
         int grades = 0;
 
@@ -289,7 +283,4 @@ public class Student {
         }
     }
 
-    public int getYearEnrolled() {
-        return enrollmentDate.getYear();
-    }
 }

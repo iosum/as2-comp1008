@@ -1,5 +1,5 @@
 import java.time.DayOfWeek;
-import java.time.LocalDate;
+
 import java.time.LocalTime;
 import java.util.ArrayList;
 
@@ -13,10 +13,21 @@ public class Course {
     private int hours;
     public ArrayList<Student> students;
     private int maxStudents;
-    private int classSize;
 
     private String prerequisiteCourse;
 
+
+    /**
+     * constructor
+     *
+     * @param instructor
+     * @param courseCode
+     * @param courseDescription
+     * @param courseRoom
+     * @param courseDay
+     * @param courseTime
+     * @param hours
+     */
     public Course(Instructor instructor, String courseCode, String courseDescription, String courseRoom,
                   DayOfWeek courseDay, LocalTime courseTime, int hours) {
         this.instructor = instructor;
@@ -30,6 +41,17 @@ public class Course {
         setProf(instructor);
     }
 
+    /**
+     * constructor
+     * @param instructor
+     * @param courseCode
+     * @param courseDescription
+     * @param courseRoom
+     * @param courseDay
+     * @param courseTime
+     * @param hours
+     * @param prerequisiteCourse
+     */
     public Course(Instructor instructor, String courseCode, String courseDescription,
                   String courseRoom, DayOfWeek courseDay, LocalTime courseTime,
                   int hours, String prerequisiteCourse) {
@@ -44,14 +66,11 @@ public class Course {
         students = new ArrayList<>();
     }
 
-    public String getPrerequisiteCourse() {
-        return prerequisiteCourse;
-    }
-
-    public void setPrerequisiteCourse(String prerequisiteCourse) {
-        this.prerequisiteCourse = prerequisiteCourse;
-    }
-
+    /**
+     * add a professor to a course
+     * @param addProf
+     * @return
+     */
     public Instructor setProf(Instructor addProf) {
         if (addProf.instructorCanTeach(courseCode) == true) {
             return addProf;
@@ -62,66 +81,26 @@ public class Course {
         }
     }
 
-    public ArrayList<Student> getStudents() {
-        return students;
-    }
-
-    public void setStudents(ArrayList<Student> students) {
-        this.students = students;
-    }
-
-    public int getMaxStudents() {
-        return maxStudents;
-    }
-
-    public void setMaxStudents(int maxStudents) {
-        this.maxStudents = maxStudents;
-    }
-
+    /**
+     * get an instructor
+     * @return
+     */
     public Instructor getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(Instructor instructor) {
-
-        this.instructor = instructor;
-    }
-
+    /**
+     * get the course code
+     * @return
+     */
     public String getCourseCode() {
         return courseCode;
     }
 
-    public void setCourseCode(String courseCode) {
-        this.courseCode = courseCode;
-    }
-
-    public String getCourseDescription() {
-        return courseDescription;
-    }
-
-    public void setCourseDescription(String courseDescription) {
-        this.courseDescription = courseDescription;
-    }
-
-    public String getCourseRoom() {
-        return courseRoom;
-    }
-
-    public void setCourseRoom(String courseRoom) {
-        this.courseRoom = courseRoom;
-    }
-
-    public DayOfWeek getCourseDay() {
-        return courseDay;
-    }
-
-    public void setCourseDay(DayOfWeek courseDay) {
-        this.courseDay = courseDay;
-    }
-
-    public LocalTime getCourseTime() {
-        return courseTime;
-    }
+    /**
+     * set the course time between 8-18
+     * @param courseTime
+     */
 
     public void setCourseTime(LocalTime courseTime) {
         if (courseTime.getHour() >= 8 && courseTime.getHour() < 18) {
@@ -132,34 +111,49 @@ public class Course {
         }
     }
 
-    public int getHours() {
-        return hours;
-    }
-
-    public void setHours(int hours) {
-        this.hours = hours;
-    }
-
+    /**
+     * return course code and course description
+     * @return
+     */
     public String toString() {
         return String.format("%s-%s", courseCode, courseDescription);
     }
 
+    /**
+     * get the classroom of a course
+     * @return
+     */
     public String getClassRoom() {
         return courseRoom;
     }
+
+    /**
+     * get the course day and time
+     * @return
+     */
 
     public String getCourseDayAndTime() {
         String time = "";
         time = time + courseDay;
         time = time + "'s, starting at " + courseTime;
-
         return time;
     }
 
+    /**
+     * know which instructor is able to teach
+     * @return
+     */
     public Instructor getInstructorToTeach() {
         return getInstructor();
     }
 
+    /**
+     * add students into a course, which must complete prerequisite course,
+     * be in good standing and the size of the
+     * course can not be over 40
+     * @param newStudent
+     * @return
+     */
     public String addStudent(Student newStudent) {
         String result = "";
         if (prerequisiteCourse != null) {
@@ -173,7 +167,7 @@ public class Course {
         else if (!newStudent.studentInGoodStanding()) {
             result = "The Student is not in good standing and cannot join the course.";
         }
-        else if (students.size() >= maxStudents && students.size()>0) {
+        else if (students.size() >= maxStudents && students.size() > 0) {
             result = "Student was not added because the course is full";
         }
         else {
@@ -185,6 +179,7 @@ public class Course {
 
     /**
      * display the class list
+     *
      * @return
      */
     public String displayTheClassList() {
@@ -195,6 +190,11 @@ public class Course {
         return classList;
     }
 
+    /**
+     * set the class size which cannot exceed 40 students
+     * @param classSize
+     * @return
+     */
     public String setClassSize(int classSize) {
         String result = "";
         if (classSize > 40) {
@@ -205,10 +205,18 @@ public class Course {
         return result;
     }
 
+    /**
+     * get the current number of students in a class
+     * @return
+     */
     public int getClassSize() {
         return maxStudents;
     }
 
+    /**
+     * check if the average age of students were over 25 or not
+     * @return
+     */
     public boolean matureClass() {
         double allStudentAge = 0;
         int sum = 0;
@@ -227,6 +235,10 @@ public class Course {
         }
     }
 
+    /**
+     * get prerequisite courses
+     * @return
+     */
     public String checkPrerequisite() {
         return prerequisiteCourse;
     }
